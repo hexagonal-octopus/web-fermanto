@@ -1,0 +1,86 @@
+.toast {
+	width: 100%;
+	background: white;
+	box-sizing: border-box;
+	padding: 15px;
+	line-height: rem(18);
+	font-size: rem(14);
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+	margin-bottom: 24px;
+	border: 1px solid transparent;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(30px);
+	transition: all 200ms ease-out;
+	display: none;
+
+	position: fixed;
+	top: 123px;
+	right: 10px;
+	z-index: 10;
+
+	@include small {
+		width: 300px;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+	}
+
+	&__icon {
+		width: 16px;
+		height: 18px;
+		background-repeat: no-repeat;
+		background-position: center center;
+		margin-right: 8px;
+	}
+
+	&__message {
+		color: black;
+		text-align: left;
+		flex: 1;
+	}
+
+	&__close {
+		width: 16px;
+		height: 18px;
+		line-height: 18px;
+		margin-left: 16px;
+		cursor: pointer;
+
+		svg {
+			width: 16px;
+			line-height: 18x;
+			height: 18px;
+			stroke: #909090;
+		}
+
+		&:hover svg {
+			stroke: #000;
+		}
+	}
+
+	&--visible {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+	}
+
+	&--success {
+		border: 1px solid $color-third;
+
+		.toast__icon {
+			background-image: url('../images/default/img-icon-happy.png');
+		}
+	}
+
+	&--error {
+		border: 1px solid $color-red;
+
+		.toast__icon {
+			background-image: url('../images/default/img-icon-sad.png');
+		}
+	}
+}

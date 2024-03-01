@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="format-detection" content="telephone=no">
+   <title>Fermanto Bevfoods | Fermanto BevFoods</title>
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180" />
+   <link rel="icon" href="./favicon-32x32.png" sizes="32x32" type="image/png" />
+   <link rel="icon" href="./favicon-16x16.png" sizes="16x16" type="image/png" />
+   <link rel="icon" href="./favicon.ico"/>
+
+   <link rel="stylesheet" href="./assets/styles/vendor/normalize.css/normalize.css" />
+   
+   <link rel="stylesheet" href="./assets/styles/style.css" />
+
+   <script src="./assets/scripts/vendor/modernizr.js" ></script>
+   <script src="./assets/scripts/vendor/jquery/jquery.min.js" ></script>
+
+</head>
+<body>
+   <div class="preloader">
+   <div class="preloader__wrapper">
+      <img src="./assets/images/default/img-logo-fermanto-small.png" alt="Preloader Image">
+   </div>
+</div>
+   <header class="header">
+   <nav class="navbar">
+      <div class="container">
+         <div class="navbar__wrapper">
+            <div class="navbar__brand">
+               <a href="./index.html">
+                  <picture>
+                     <source  srcset="./assets/images/default/logo-large.png 250w, ./assets/images/default/logo-large-retina.png 504w " media="(min-width:576px)">
+                     <img class="large-hero__image" srcset="./assets/images/default/logo-small.png 164w, ./assets/images/default/logo-small-retina.png 328w" alt="Fermanto Logo">
+                  </picture>
+               </a>
+            </div>
+            <div class="navbar__nav">
+   <ul class="nav" id="mainNavigation">
+      <li class="nav__item">
+         <a href="./brands.html" class="nav__link">Our Brands</a>
+         <div class="nav__child">
+            <ul class="subnav">
+               <li><a href="./brand.html">Ahmad Tea</a></li>
+               <li><a href="./brand.html">Campfire</a></li>
+               <li><a href="./brand.html">Itsuki</a></li>
+               <li><a href="./brand.html">Jays</a></li>
+               <li><a href="./brand.html">John John</a></li>
+               <li><a href="./brand.html">Krunchers</a></li>
+               <li><a href="./brand.html">Pacific Foods</a></li>
+               <li><a href="./brand.html">Pastarotti</a></li>
+               <li><a href="./brand.html">Pfanner</a></li>
+               <li><a href="./brand.html">Poco Loco</a></li>
+               <li><a href="./brand.html">Pulmoll</a></li>
+               <li><a href="./brand.html">Rocky Mountain</a></li>
+               <li><a href="./brand.html">Snyder's</a></li>
+               <li><a href="./brand.html">St Michel</a></li>
+               <li><a href="./brand.html">Valledoro</a></li>
+            </ul>
+         </div>
+      </li>
+      <li class="nav__item"><a href="./recipes.html" class="nav__link">Recipes</a></li>
+      <li class="nav__item"><a href="./how-to-order.html" class="nav__link">How to Order</a></li>
+      <li class="nav__item"><a href="./contact.html" class="nav__link">Contact</a></li>
+   </ul>
+</div>
+            <button class="button button--toggler-menu"><i data-feather="menu" class="button__icon"></i></button>
+            <button class="button button--basket" data-target="#modalBasket" data-toggle="modal">
+               <span class="button__icon"></span><span class="button__number" id="basketViewNum">99</span>
+            </button>
+         </div>
+      </div>
+   </nav>
+</header>
+   
+<section class="section section--gradient-bottom section--yspace">
+   <div class="container">
+      <div class="row">
+         <div class="col-2of3">
+            <div class="section__text pr-4-xl">
+               <h1 class="section__title mb-4">Fermanto BevFoods</h1>
+               <p>We are one of the youngest and fastest growing Imports and Distribution Company in Indonesia. Since our establishment we have grown in a very short time to become one of the leading suppliers of foodstuffs in Indonesian modern trade. We pride ourselves in working quickly and efficiently, linking our global partners to local consumers throughout Indonesia, from major cities in Java Island to remote locations in Papua New Guinea. All our products are handled with outmost care so they arrive at the shelves at the best possible condition.</p>
+               <p>We are deeply committed and dedicated in all aspects of development of the brands we represent. It is the same commitment and dedication that bears fruit to our success.</p>
+            </div>
+         </div>
+         <div class="col-1of3">
+            <div class="section__image section__image--offset">
+               <img src="./assets/images/default/img-feature-about.jpg" alt="About Fermanto Image">
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--white section--yspace">
+   <div class="container">
+      <h2 class="section__title">Distribution Channels</h2>
+      <div class="section__image section__image--scrollable mt-3">
+         <img src="./assets/images/default/img-map-distribution.png" alt="Distribution channels map"/>
+      </div>
+   </div>
+</section>
+<section class="section section--yspace section--white">
+   <div class="container">
+      <h1>Navigation Steps</h1>
+      <div class="row">
+         <div class="col">
+            <div class="nav nav--steps">
+   <div class="nav__step nav__step--active"><span>1</span><span>Basket List</span></div>
+   <div class="nav__step"><span>2</span><span>Overview</span></div>
+</div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Pagination</h1>
+     <div class="pagination pagination--justify-end">
+   <ul>
+      <li class="pagination__item"><a href="#" class="pagination__link">First</a></li>
+      <li class="pagination__item"><a href="#" class="pagination__link">Previous</a></li>
+      <li class="pagination__item">...</li>
+      <li class="pagination__item"><a href="#" class="pagination__link">6</a></li>
+      <li class="pagination__item"><a href="#" class="pagination__link">7</a></li>
+      <li class="pagination__item active"><a href="#" class="pagination__link">8</a></li>
+      <li class="pagination__item"><a href="#" class="pagination__link">9</a></li>
+      <li class="pagination__item"><a href="#" class="pagination__link">10</a></li>
+      <li class="pagination__item">...</li>
+      <li class="pagination__item"><a href="#" class="pagination__link">Next</a></li>
+      <li class="pagination__item"><a href="#" class="pagination__link">Last</a></li>
+   </ul>
+</div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Buttons</h1>
+      <button class="button button--primary">View All Product</button>
+      <button class="button button--secondary">View All Product</button>
+      <button class="button button--tertiary">Continue Shopping</button>
+      <button class="button button--primary" disabled>Disabled Button</button>
+      <button class="button button--secondary" disabled>Disabled Button</button>
+      <button class="button button--tertiary" disabled>Disabled Button</button>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Toast Notification</h1>
+      <div class="toast toast--visible" style="display: block">
+         <div class="toast__wrapper">
+            <span class="toast__message">
+               Default Toast Notification
+            </span>
+            <span class="toast__close" data-dismiss="toast"><i data-feather="x"></i></span>
+         </div>
+      </div>
+      <div class="toast toast--success toast--visible" style="display: block">
+         <div class="toast__wrapper">
+            <span class="toast__icon"></span>
+            <span class="toast__message">
+               Daftar Belanja berhasil terupdate
+            </span>
+            <span class="toast__close" data-dismiss="toast"><i data-feather="x"></i></span>
+         </div>
+      </div>
+      <div class="toast toast--error toast--visible" style="display: block">
+         <div class="toast__wrapper">
+            <span class="toast__icon"></span>
+            <span class="toast__message">
+               Tidak dapat update Daftar Belanja, dikarenakan over kuota. Jadi pilihlah yang tepat.
+            </span>
+            <span class="toast__close" data-dismiss="toast"><i data-feather="x"></i></span>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Select Box</h1>
+      <div class="row">
+         <div class="col-1of4">
+            <div class="selectbox">
+   <div class="selectbox__wrapper">
+      <div class="selectbox__header">
+         <span class="selectbox__text">All Brands</span>
+         <span class="selectbox__arrow"></span>
+      </div>
+      <div class="selectbox__body">
+         <ul>
+            <li><span data-name="all">All Brands</span></li>
+            <li><span data-name="ahmadtea">Ahmad Tea</span></li>
+            <li><span data-name="campfire">Campfire</span></li>
+            <li><span data-name="itsuki">Itsuki</span></li>
+            <li><span data-name="jays">Jays</span></li>
+            <li><span data-name="john-john">John &amp; John</span></li>
+            <li><span data-name="krunchers">Krunchers</span></li>
+            <li><span data-name="pacific-foods">Pacific Foods</span></li>
+            <li><span data-name="pastarotti">Pastarotti</span></li>
+            <li><span data-name="pfanner">Pfanner</span></li>
+            <li><span data-name="poco-loco">Poco Loco</span></li>
+            <li><span data-name="pulmoll">Pulmoll</span></li>
+            <li><span data-name="rocky-mountain">Rocky Mountain</span></li>
+            <li><span data-name="snyders">Snyder's</span></li>
+            <li><span data-name="stmichel">St Michel</span></li>
+            <li><span data-name="valledoro">Valledoro</span></li>
+         </ul>
+      </div>
+   </div>
+</div><!-- /.selectbox -->
+         </div>
+         <div class="col-1of4">
+            <div class="select-category">
+   <div class="select-category__wrapper">
+      <div class="select-category__header">
+         <span class="select-category__text">Categories</span>
+         <span class="select-category__icon"><i data-feather="plus"></i></span>
+      </div>
+      <div class="select-category__body">
+         <ul>
+            <li><label for="breadstick"><input type="checkbox" value="breadstick" name="breadstick" id="breadstick" class="select-category__check"><span>Breadsticks</span></label></li>
+            <li><label for="bibi-e-bibo"><input type="checkbox" value="bibi e bibo" name="bibi-e-bibo" id="bibi-e-bibo" class="select-category__check"><span>Bibi e Bibo</span></label></li>
+            <li><label for="baked-snack"><input type="checkbox"  value="baked snack" name="baked-snack" id="baked-snack" class="select-category__check"><span>Baked snacks</span></label></li>
+            <li><label for="gluten-free"><input type="checkbox" value="gluten free"  name="gluten-free" id="gluten-free" class="select-category__check"><span>Gluten-free</span></label></li>
+            <li><label for="catering"><input type="checkbox"  value="catering" name="catering" id="catering" class="select-category__check"><span>For Catering trade on 
+Special Events</span></label></li>
+         </ul>
+      </div>
+   </div>
+</div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Lists Products</h1>
+      <div class="lists lists--grid lists--grid4">
+   <div class="lists__item">
+      <div class="cardview">
+         <a href="#" class="cardview__link">
+            <div class="cardview__wrapper">
+               <div class="cardview__image">
+                  <img src="./assets/images/default/img-crostini-480.jpg" alt="Image Product">
+               </div>
+               <div class="cardview__content">
+                  <div class="cardview__left cardview__left--full">
+                     <h3 class="cardview__name">Cirri Crostini What Happened if over than max-length 30</h3>
+                     <div class="cardview__price">Rp 175.000</div>
+                  </div>
+               </div>
+            </div>
+            <div class="orlabel orlabel--featured"><img src="./assets/images/default/img-star.png" alt="Featured Product" /></div>
+         </a>
+      </div>
+   </div><!-- /.lists__item -->
+   <div class="lists__item">
+      <div class="cardview">
+         <a href="#" class="cardview__link">
+            <div class="cardview__wrapper">
+               <div class="cardview__image">
+                  <img src="./assets/images/default/img-crostini-480.jpg" alt="Image Product">
+               </div>
+               <div class="cardview__content">
+                  <div class="cardview__left cardview__left--full">
+                     <h3 class="cardview__name">Cirri Crostini What Happened if over than max-length 30</h3>
+                     <div class="cardview__price">Rp 175.000</div>
+                  </div>
+               </div>
+            </div>
+            <div class="orlabel orlabel--featured"><img src="./assets/images/default/img-star.png" alt="Featured Product" /></div>
+         </a>
+      </div>
+   </div><!-- /.lists__item -->
+   <div class="lists__item">
+      <div class="cardview">
+         <a href="#" class="cardview__link">
+            <div class="cardview__wrapper">
+               <div class="cardview__image">
+                  <img src="./assets/images/default/img-crostini-480.jpg" alt="Image Product">
+               </div>
+               <div class="cardview__content">
+                  <div class="cardview__left cardview__left--full">
+                     <h3 class="cardview__name">Cirri Crostini What Happened if over than max-length 30</h3>
+                     <div class="cardview__price">Rp 175.000</div>
+                  </div>
+               </div>
+            </div>
+            <div class="orlabel orlabel--featured"><img src="./assets/images/default/img-star.png" alt="Featured Product" /></div>
+         </a>
+      </div>
+   </div><!-- /.lists__item -->
+   <div class="lists__item">
+      <div class="cardview">
+         <a href="#" class="cardview__link">
+            <div class="cardview__wrapper">
+               <div class="cardview__image">
+                  <img src="./assets/images/default/img-crostini-480.jpg" alt="Image Product">
+               </div>
+               <div class="cardview__content">
+                  <div class="cardview__left cardview__left--full">
+                     <h3 class="cardview__name">Cirri Crostini What Happened if over than max-length 30</h3>
+                     <div class="cardview__price">Rp 175.000</div>
+                  </div>
+               </div>
+            </div>
+            <div class="orlabel orlabel--featured"><img src="./assets/images/default/img-star.png" alt="Featured Product" /></div>
+         </a>
+      </div>
+   </div><!-- /.lists__item -->
+   <div class="lists__item">
+      <div class="cardview">
+         <a href="#" class="cardview__link">
+            <div class="cardview__wrapper">
+               <div class="cardview__image">
+                  <img src="./assets/images/default/img-crostini-480.jpg" alt="Image Product">
+               </div>
+               <div class="cardview__content">
+                  <div class="cardview__left cardview__left--full">
+                     <h3 class="cardview__name">Cirri Crostini What Happened if over than max-length 30</h3>
+                     <div class="cardview__price">Rp 175.000</div>
+                  </div>
+               </div>
+            </div>
+            <div class="orlabel orlabel--featured"><img src="./assets/images/default/img-star.png" alt="Featured Product" /></div>
+         </a>
+      </div>
+   </div><!-- /.lists__item -->
+   <div class="lists__item">
+      <div class="cardview">
+         <a href="#" class="cardview__link">
+            <div class="cardview__wrapper">
+               <div class="cardview__image">
+                  <img src="./assets/images/default/img-crostini-480.jpg" alt="Image Product">
+               </div>
+               <div class="cardview__content">
+                  <div class="cardview__left cardview__left--full">
+                     <h3 class="cardview__name">Cirri Crostini What Happened if over than max-length 30</h3>
+                     <div class="cardview__price">Rp 175.000</div>
+                  </div>
+               </div>
+            </div>
+            <div class="orlabel orlabel--featured"><img src="./assets/images/default/img-star.png" alt="Featured Product" /></div>
+         </a>
+      </div>
+   </div><!-- /.lists__item -->
+</div><!-- /.lists -->
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Zoom Product</h1>
+      <div class="row">
+         <div class="col-2of4">
+            <script src="./assets/scripts/vendor/jquery-zoom/jquery.zoom.min.js"></script>
+<div class="image image--zoomlist">
+   <div class="image__feature">
+      <div class="image__wrapper" id="zoomableImage">
+         
+      </div>
+   </div>
+   <div class="image__thumbs">
+      <div class="image__thumb">
+         <div class="image__thumb-item">
+            <img src="./assets/images/catalog/thumbnail/5c7e6498f2d43_ceylon_bags.png" alt="image-thumbnail">
+         </div>
+      </div>
+      <div class="image__thumb">
+         <div class="image__thumb-item">
+            <img src="./assets/images/catalog/thumbnail/img-risibi.jpg" alt="image-thumbnail">
+         </div>
+      </div>
+      <div class="image__thumb">
+         <div class="image__thumb-item">
+            <img src="./assets/images/catalog/thumbnail/img-zufi-pesto.jpg" alt="image-thumbnail">
+         </div>
+      </div>
+      <div class="image__thumb">
+         <div class="image__thumb-item">
+            <img src="./assets/images/catalog/thumbnail/img-zufi-pizza.jpg" alt="image-thumbnail">
+         </div>
+      </div>
+   </div>
+</div>
+         </div>
+         <div class="col-2of4">
+            <article class="article">
+   <h2 class="article__name">Cirri al Rosmarino</h2>
+   <p class="article__info">Brand: <a href="#">Valledoro</a></p>
+   <p class="article__price mask-currency">175000</p>
+   <div class="article__action">
+      <form class="form">
+         <div class="form__group form__group--flex-row my-4">
+            <span>Qty.</span>
+            <div class="article__input-qty">
+               <button type="button" class="button button--icon button--icon-decrement"><i data-feather="minus"></i></button>
+               <input type="number" value="1" name="item_qty" class="input input--qty">
+               <button type="button" class="button button--icon button--icon-increment"><i data-feather="plus"></i></button>
+            </div>
+            <!-- on production: Please change button type to submit -->
+            <button class="button button--primary js-add-to-basket" type="button">Add to My Basket</button>
+         </div>
+      </form>
+   </div>
+   <div class="article__text">
+      <p>These crostini are prepared with long cooking and toasting methods. They are flavoured with extra virgin olive oil and rosemary, and ideal as a snack at any time of day or as an accompaniment to soup.</p>
+      <p><strong>Ingredient</strong><br/>
+Grade 0 wheat flour, high-oleic sunflower oil, extra virgin olive oil (4.5%), yeast, iodised salt, malted cereal flour, rosemary (2%). May contain traces of sesame.</p>
+   </div>
+</article>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Basket List</h1>
+      <div class="table table--basket">
+   <div class="table__wrapper">
+      <div class="table__content">
+         <div class="table__header">
+            <div class="table__row">
+               <div class="table__col">
+                  <div class="table__heading">Produk</div>
+               </div>
+               <div class="table__col">
+                  <div class="table__heading">Harga</div>
+               </div>
+               <div class="table__col">
+                  <div class="table__heading">Jumlah</div>
+               </div>
+               <div class="table__col">
+                  <div class="table__heading">Subtotal</div>
+               </div>
+               <div class="table__col"></div>
+            </div>
+         </div>
+         <div class="table__body">
+            <div class="table__row">
+               <div class="table__col" data-label="Product">
+                  <div class="group">
+                     <div class="group__thumb">
+                        <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="group__img">
+                     </div>
+                     <div class="group__content">
+                        <h3 class="group__name">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                        <p class="group__info">Brand: Valledoro</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Harga">
+                  <div class="table__base-price mask-currency">15000</div>
+               </div>
+               <div class="table__col" data-label="Jumlah">
+                  <div class="table__quantity">
+                     <button class="button button--icon button--icon-decrement"><i data-feather="minus"></i></button>
+                     <input class="input input--qty table__input-qty" type="number" value="1"/>
+                     <button class="button button--icon button--icon-increment"><i data-feather="plus"></i></button>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Subtotal">
+                  <div class="table__subtotal mask-currency">0</div>
+               </div>
+               <div class="table__col" data-label="">
+                  <div class="table__action">
+                     <button class="button button--icon-danger js-button-delete" type="button" ><i data-feather="trash"></i></button>
+                  </div>
+               </div>
+            </div><!-- /.table__row -->
+            <div class="table__row">
+               <div class="table__col" data-label="Product">
+                  <div class="group">
+                     <div class="group__thumb">
+                        <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="group__img">
+                     </div>
+                     <div class="group__content">
+                        <h3 class="group__name">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                        <p class="group__info">Brand: Valledoro</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Harga">
+                  <div class="table__base-price mask-currency">20000</div>
+               </div>
+               <div class="table__col" data-label="Jumlah">
+                  <div class="table__quantity">
+                     <button class="button button--icon button--icon-decrement"><i data-feather="minus"></i></button>
+                     <input class="input input--qty table__input-qty" type="number" value="1"/>
+                     <button class="button button--icon button--icon-increment"><i data-feather="plus"></i></button>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Subtotal">
+                  <div class="table__subtotal mask-currency">0</div>
+               </div>
+               <div class="table__col" data-label="">
+                  <div class="table__action">
+                     <button class="button button--icon-danger js-button-delete" type="button" ><i data-feather="trash"></i></button>
+                  </div>
+               </div>
+            </div><!-- /.table__row -->
+            <div class="table__row">
+               <div class="table__col" data-label="Product">
+                  <div class="group">
+                     <div class="group__thumb">
+                        <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="group__img">
+                     </div>
+                     <div class="group__content">
+                        <h3 class="group__name">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                        <p class="group__info">Brand: Valledoro</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Harga">
+                  <div class="table__base-price mask-currency">60000</div>
+               </div>
+               <div class="table__col" data-label="Jumlah">
+                  <div class="table__quantity">
+                     <button class="button button--icon button--icon-decrement"><i data-feather="minus"></i></button>
+                     <input class="input input--qty table__input-qty" type="number" value="1"/>
+                     <button class="button button--icon button--icon-increment"><i data-feather="plus"></i></button>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Subtotal">
+                  <div class="table__subtotal mask-currency">0</div>
+               </div>
+               <div class="table__col" data-label="">
+                  <div class="table__action">
+                     <button class="button button--icon-danger js-button-delete" type="button" ><i data-feather="trash"></i></button>
+                  </div>
+               </div>
+            </div><!-- /.table__row -->
+            <div class="table__row">
+               <div class="table__col" data-label="Product">
+                  <div class="group">
+                     <div class="group__thumb">
+                        <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="group__img">
+                     </div>
+                     <div class="group__content">
+                        <h3 class="group__name">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                        <p class="group__info">Brand: Valledoro</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Harga">
+                  <div class="table__base-price mask-currency">30000</div>
+               </div>
+               <div class="table__col" data-label="Jumlah">
+                  <div class="table__quantity">
+                     <button class="button button--icon button--icon-decrement"><i data-feather="minus"></i></button>
+                     <input class="input input--qty table__input-qty" type="number" value="1"/>
+                     <button class="button button--icon button--icon-increment"><i data-feather="plus"></i></button>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Subtotal">
+                  <div class="table__subtotal mask-currency" >0</div>
+               </div>
+               <div class="table__col" data-label="">
+                  <div class="table__action">
+                     <button class="button button--icon-danger js-button-delete" type="button" ><i data-feather="trash"></i></button>
+                  </div>
+               </div>
+            </div><!-- /.table__row -->
+         </div><!-- /.table__body -->
+         <div class="table__footer">
+            <div class="table__row table__row--justify-end">
+               <div class="table__col">
+                  <div class="table__heading">Subtotal</div>
+               </div>
+               <div class="table__col">
+                  <div class="table__netttotal mask-currency">0</div>
+               </div>
+            </div>
+            <div class="table__row table__row--justify-end table__row--no-border">
+               <div class="table__col">
+                  <div class="table__heading">Grand total</div>
+               </div>
+               <div class="table__col">
+                  <div class="table__grandtotal mask-currency">0</div>
+               </div>
+            </div>
+         </div>
+      </div><!-- /.table__content -->
+   </div>
+</div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Checkout Form</h1>
+      <div class="row">
+         <div class="col-3of4">
+            <div class="form__group">
+   <label for="fname">Nama Lengkap</label>
+   <input type="text" class="form__control" id="fname" name="fname" placeholder="Fill your Full Name" required>
+</div>
+<div class="form__group">
+   <label for="mobile">Telepon Mobile</label>
+   <input type="number" class="form__control" id="mobile" name="mobile" placeholder="Fill your valid Mobile Number" required>
+   <span class="form__info">Number [0 - 9], example: 081234567890</span>
+</div>
+<div class="form__group">
+   <label for="email">Alamat Email</label>
+   <input type="email" class="form__control form__control--invalid" id="email" name="email" required>
+   <span class="form__feedback">Bukan Alamat Email yang valid, silakan melakukan pengecekan kembali.</span>
+</div>
+<div class="form__group">
+   <label for="address">Alamat Lengkap</label>
+   <textarea class="form__control form__control--invalid" id="fname" name="fname" required rows="5"></textarea>
+   <span class="form__info">Filled with Street Name, House Number, Building Name, Unit Number, Floor Name.</span>
+   <span class="form__feedback">This is error message.</span>
+</div>
+<div class="form__row">
+   <div class="form__group">
+      <label for="city">Kota/ Propinsi</label>
+      <input type="text" class="form__control" id="city" name="city" placeholder="Fill your current city and/or district">
+   </div>
+   <div class="form__group">
+      <label for="postal">Kode Pos</label>
+      <input type="number" class="form__control" id="postal" name="postal" placeholder="Fill your Postal Code" >
+   </div>
+</div>
+
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Modal</h1>
+      <div class="row">
+         <div class="col-4of4">
+            <button class="button button--primary" data-toggle="modal" data-target="#modalThankyou">Call Modal Thankyou</button>
+            <button class="button button--primary" data-toggle="modal" data-target="#modalSuccess">Call Modal Success</button>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Sidebar Information</h1>
+      <div class="row">
+         <div class="col-1of3">
+            <div class="cardview cardview--sidebar">
+   <div class="cardview__wrapper">
+      <div class="map">
+         <div class="map__wrapper">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.866463406019!2d106.80808270036844!3d-6.206445301898884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6a4bd21479f%3A0xe2778049d159f16a!2sJl.+Penjernihan+II+No.1%2C+RT.10%2FRW.6%2C+Bend.+Hilir%2C+Tanah+Abang%2C+Kota+Jakarta+Pusat%2C+Daerah+Khusus+Ibukota+Jakarta+10210!5e0!3m2!1sen!2sid!4v1539851366486" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+         </div>
+      </div>
+      <div class="cardview__content">
+         <h2 class="cardview__title">Main Office</h2>
+         <div class="cardview__text">
+            <p>Jl. Penjernihan II no.1 Pav<br/>Jakarta Pusat, Indonesia</p>
+            <p>Telp: 021 5732816, 021 5732845<br/>Fax: 021 5736678</p>
+            <!-- Handled Whatsapp API in php ref-to: -->
+            <!-- https://medium.com/@jeanlivino/how-to-fix-whatsapp-api-in-desktop-browsers-fc661b513dc -->
+            <p>Whatsapp: <a href="#">0816767190</a></p>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+         </div>
+         <div class="col-1of3">
+            <div class="cardview cardview--sidebar cardview--helpdesk">
+   <div class="cardview__wrapper">
+      <div class="cardview__content">
+         <h2 class="cardview__title">Butuh Bantuan</h2>
+         <div class="cardview__text">
+            <p>Jika ini kebutuhan mendesak, silahkan menghubungi nomor kami dibawah ini untuk bantuan operator.</p>
+         </div>
+         <div class="cardview__action">
+            <h3 class="cardview__action-title">Helpdesk</h3>
+            <p class="cardview__action-link"><a href="tel:0215732816" target="_blank"><i data-feather="phone-call" ></i> 021 5732816</a></p>
+            <p class="cardview__action-link"><a href="tel:0215732845" target="_blank"><i data-feather="phone-call" ></i> 021 5732845</a></p>
+         </div>
+      </div>
+   </div>
+</div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Brand Home</h1>
+      <article class="article">
+   <div class="article__banner">
+      <img src="./assets/images/default/img-banner-brand.jpg" alt="Banner Brand">
+   </div>
+   <div class="row">
+      <div class="col-1of3">
+         <div class="article__pull-up">
+            <div class="article__image-logo">
+               <img src="./assets/images/default/img-logo-valledoro.jpg" alt="Valledoro">
+            </div>
+            <a class="button button--primary button--icon-text mx-auto" data-toggle="scrollto" data-target="#brandProducts" href="#brandProducts"><i data-feather="grid" class="button__feather-icon"></i>View Products</a>
+         </div>
+      </div>
+      <div class="col-2of3">
+         <div class="article__content">
+            <h2 class="article__title">Valledoro</h2>
+            <div class="article__text">
+               <p>The company is run by the third generation of the Zubani family.The company has expanded since 1954, and with 5 production lines offers a wide range of products that include different types of breadsticks, rolls and snacks. Valledoro is also a symbol of the Made in Italy brand throughout the world.</p>
+               <p>Our products are widely available on the national market and are also exported abroad. This is due to our passion and experience, enabling us to develop a reputation as a supplier and producer of premium quality foodstuffs.</p>
+               <p>Website URL: <a href="http://www.valledorospa.it/" target="_blank">http://www.valledorospa.it/</a></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</article>
+   </div>
+</section>
+<section class="section section--yspace section--white">
+   <div class="container">
+      <h1>Partnership</h1>
+      <div class="lists lists--image">
+   <ul>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-kitchenette.jpg" alt="Kitchenette">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-social-house.jpg" alt="Social House">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-djournal.jpg" alt="Djournal">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-tokyo-belly.jpg" alt="Tokyo Belly">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-pizza-birra.jpg" alt="Pizza Bira">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-blowfish.jpg" alt="blowfish">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-abuella.jpg" alt="Abuella">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-nannys.jpg" alt="Nannys Pavilion">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-skye.jpg" alt="Skye">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-colette.jpg" alt="Collete de Lola">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-gia.jpg" alt="Gia Jakarta">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-sushi-groove.jpg" alt="Sushi Groove">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-monolog.jpg" alt="Monolog">
+      </li>
+      <li class="lists__item">
+         <img src="./assets/images/partner/img-union.jpg" alt="Union">
+      </li>
+   </ul>
+</div>
+   </div>
+</section>
+
+
+   <footer class="footer">
+   <div class="footer__top">
+      <div class="container">
+         <div class="row">
+            <div class="col-1of3">
+               <div class="footer__brand">
+                  <picture>
+                     <source  srcset="./assets/images/default/logo-large.png 250w, ./assets/images/default/logo-large-retina.png 504w " media="(min-width:576px)">
+                     <img class="large-hero__image" srcset="./assets/images/default/logo-small.png 164w, ./assets/images/default/logo-small-retina.png 328w" alt="Fermanto Logo">
+                  </picture>
+               </div>
+            </div>
+            <div class="col-1of3">
+               <h2 class="footer__title">Address</h2>
+               <div class="footer__text">
+                  <p>Jl. Penjernihan II no 1 Pav<br>Jakarta Pusat, Indonesia</p>
+                  <p>Phone: 021 5732816, 021 5732845<br>Fax: 021 5736678</p>
+               </div>
+            </div>
+            <div class="col-1of3">
+               <h2 class="footer__title">Quick Navigation</h2>
+               <div class="footer__navigation">
+                  <ul>
+   <li><a href="./products.html">Products</a></li>
+   <li><a href="./brands.html">Our Brands</a></li>
+   <li><a href="./recipes.html">Recipes</a></li>
+   <li><a href="./about.html">About Us</a></li>
+   <li><a href="./contact.html">Contact</a></li>
+   <li><a href="./how-to-order.html">How To Order</a></li>
+   <li><a href="./basket-list.html">My Basket</a></li>
+</ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="footer__bottom">
+      <div class="container">
+         <span class="text-center">Copyright &copy; 2018. FermantoBevFood. All Right Reserved.</span>
+      </div>
+   </div>
+</footer>
+   <div class="modal modal--basket" id="modalBasket">
+   <div class="modal__wrapper">
+      <div class="modal__dialog">
+         <div class="modal__header">
+            <div class="orlabel"><span>Added Items</span></div>
+            <button class="button modal__close" data-dismiss="modal"><i class="button__icon" data-feather="x"></i></button>
+         </div>
+         <div class="modal__body">
+            <div class="basketview">
+               <!-- ===================== -->
+               <!--  IF THERE IS NO ITEM  -->
+               <!-- ===================== -->
+               
+               <!-- ======================= -->
+               <!-- ELSEIF THERE IS ITEM(S) -->
+               <!-- ======================= -->
+               <div class="lists lists--basket">
+                  <ul>
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                  </ul>
+               </div><!-- /.lists-basket -->
+               <div class="basketview__footer">
+                  <div class="basketview__total">
+                     <p class="basketview__label">Total Price</p>
+                     <h2 class="basketview__price-total">Rp. 2.625.000</h2>
+                  </div><!-- /.basketview__total -->
+                  <div class="basketview__actions">
+                     <a href="./basket-list.html" class="button button--primary button--icon-text"><span class="button__icon checkout"></span><span class="button__text">View My Basket</span></a>
+                     <p class="ornament">or</p>
+                     <a href="./products.html" class="button button--link">Continue Shopping</a>
+                  </div><!-- /.basketview__actions -->
+               </div><!-- /.basketview__footer -->
+               <!-- ==================== -->
+               <!-- ====== ENDIF ======= -->
+               <!-- ==================== -->
+            </div><!-- /.basketview -->
+         </div><!-- /.modal__body -->
+      </div><!-- /.modal__dialog -->
+   </div><!-- /.modal__wrapper -->
+</div><!-- /.modal -->
+   
+<div class="modal" id="modalThankyou">
+   <div class="modal__wrapper">
+      <div class="modal__dialog">
+         <div class="modal__body">
+            <div class="modal__image">
+               <img src="./assets/images/default/img-icon-goal.png" alt="Thankyou Image" height="115">
+            </div>
+            <h2 class="modal__headline">Terimakasih</h2>
+            <div class="modal__text">
+               <p>Pemesanan Barang Anda telah berhasil terkirim.</p>
+            <p>Tim Order kami akan menghubungi Anda pada hari dan jam kerja kantor. Kami juga telah mengirimkan detail pemesanan dalam Email Anda yang sudah terkirim.</p>
+            </div>
+            <div class="modal__action">
+               <a href="./" class="button button--primary">Kembali ke Halaman Utama</a>
+            </div>
+         </div><!-- /.modal__body -->
+      </div><!-- /.modal__dialog -->
+   </div><!-- /.modal__wrapper -->
+</div><!-- /.modal -->
+<div class="modal modal--alt" id="modalSuccess">
+   <div class="modal__wrapper">
+      <div class="modal__dialog">
+         <div class="modal__header">
+            
+            <button class="button modal__close" data-dismiss="modal"><i class="button__icon" data-feather="x"></i></button>
+         </div>
+         <div class="modal__body">
+            <div class="modal__image">
+               <img src="./assets/images/default/img-icon-success.png" alt="Thankyou Image" height="115">
+            </div>
+            <h2 class="modal__headline">Success</h2>
+            <div class="modal__text">
+               <p>Thank you! Your message has been sent successfully. Our Representative Officer will gladly followup your concerns. </p>
+            </div>
+         </div><!-- /.modal__body -->
+      </div><!-- /.modal__dialog -->
+   </div><!-- /.modal__wrapper -->
+</div><!-- /.modal -->
+<div class="modal modal--alt" id="modalConfirmAlert">
+   <div class="modal__wrapper">
+      <div class="modal__dialog">
+         <div class="modal__header">
+            
+            <button class="button modal__close" data-dismiss="modal"><i class="button__icon" data-feather="x"></i></button>
+         </div>
+         <div class="modal__body">
+            <div class="modal__image">
+               <img src="./assets/images/default/img-alert-triangle.png" alt="Thankyou Image" height="41">
+            </div>
+            <h2 class="modal__headline text-danger">Konfirmasi Hapus Produk</h2>
+            <div class="modal__text">
+               <p>Apakah Anda yakin untuk menghapus produk ini? Produk akan hilang dari list belanja Anda.</p>
+            </div>
+            <div class="modal__action">
+               <button class="button button--danger" id="buttonConfirmed">Ya, Hapus produk ini</button>
+               <button class="button button--link-gray" data-dismiss="modal">Batal, Tetap simpan</button>
+            </div>
+         </div><!-- /.modal__body -->
+      </div><!-- /.modal__dialog -->
+   </div><!-- /.modal__wrapper -->
+</div><!-- /.modal -->
+
+   <script src="./assets/scripts/vendor/jquery.nicescroll/jquery.nicescroll.min.js" ></script>
+   <script src="./assets/scripts/vendor/feather-icons/feather.min.js" ></script>
+   
+   <script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
+</html>

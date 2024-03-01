@@ -1,0 +1,169 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba($color-primary, 0.95);
+	opacity: 0;
+	display: none;
+	z-index: -1;
+	transition: opacity 300ms ease-out;
+
+	&__wrapper {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__dialog {
+		width: calc(100% - 30px);
+		margin-left: 15px;
+		margin-right: 15px;
+		background: white;
+		transform: translate(0, -30px);
+		transition: transform 200ms ease-out;
+		box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.15);
+
+		@include medium {
+			margin-left: 0;
+			margin-right: 0;
+			width: 440px;
+		}
+	}
+
+	&__header {
+		padding: 20px;
+		display: flex;
+		flex-flow: row wrap;
+
+		& + .modal__body {
+			padding-top: 0px;
+		}
+	}
+
+	&__close {
+		background: transparent;
+		padding: 0px;
+		border-radius: 0;
+		margin-left: auto;
+		margin-bottom: 0;
+		width: auto;
+
+		.button__icon {
+			width: 24px;
+			height: 26px;
+		}
+	}
+
+	&__body {
+		padding: 24px;
+		text-align: center;
+		@include xlarge {
+			padding: 24px 56px;
+		}
+
+		img {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__headline {
+		font-size: rem(24);
+		line-height: em(32);
+		font-weight: normal;
+		margin: 0;
+		margin-bottom: 8px;
+		font-family: $font-family-headline;
+		color: black;
+	}
+
+	&__text {
+		p {
+			margin: 0;
+			margin-bottom: 24px;
+		}
+	}
+
+	&__action {
+		margin-top: 32px;
+
+		.button {
+			padding-left: 24px;
+			padding-right: 24px;
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&--alt {
+		background: transparent;
+
+		.modal__wrapper {
+			align-items: flex-start;
+		}
+
+		.modal__dialog {
+			margin-top: 15px;
+			width: calc(100% - 30px);
+			margin-left: 15px;
+			margin-right: 15px;
+
+			@include medium {
+				margin-top: 56px;
+				margin-left: 0;
+				margin-right: 0;
+				width: 440px;
+			}
+		}
+	}
+
+	&--basket {
+		.modal__wrapper {
+			align-items: stretch;
+		}
+
+		.modal__dialog {
+			width: 300px;
+			height: 100%;
+			padding: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: 0;
+			transform: translate(300px, 0);
+			background: white;
+			transition: transform 300ms ease-out;
+
+			@include medium {
+				width: 400px;
+				transform: translateX(400px, 0);
+			}
+		}
+
+		.modal__header {
+			padding: 15px 20px;
+			display: flex;
+			flex-flow: row wrap;
+		}
+
+		.modal__body {
+			padding: 0;
+		}
+	}
+
+	&--active {
+		z-index: 1010;
+		opacity: 1;
+		transition: opacity 300ms 50ms ease-out;
+
+		.modal__dialog {
+			transform: translate(0, 0);
+			transition: transform 300ms ease-out;
+		}
+	}
+}

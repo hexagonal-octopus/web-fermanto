@@ -1,0 +1,118 @@
+.carousel {
+	.owl-nav {
+		button.owl-prev,
+		button.owl-next {
+			outline: none;
+			background: $color-secondary;
+			width: 30px;
+			height: 30px;
+			border-radius: 4px;
+			color: white;
+			display: inline-block;
+			padding: 9px !important;
+			margin-left: 8px;
+		}
+
+		button.disabled {
+			background: #e2e2e2;
+			cursor: not-allowed;
+		}
+	}
+
+	&__item {
+		padding: 30px 15px 30px;
+	}
+
+	&__icon {
+		width: 12px;
+		height: 12px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		display: block;
+
+		&-prev {
+			background-image: url('../images/default/arrow-left.png');
+		}
+
+		&-next {
+			background-image: url('../images/default/arrow-right.png');
+		}
+	}
+
+	&--featured {
+		margin-bottom: 48px;
+
+		@include large {
+			margin-bottom: 0px;
+		}
+
+		.owl-dots {
+			display: none;
+		}
+
+		.owl-nav {
+			position: absolute;
+			bottom: -30px;
+			right: 15px;
+		}
+
+		// set min height on cardview__content
+		.cardview__content {
+			min-height: 110px;
+		}
+	}
+
+	&--recipe {
+		.owl-dots {
+			display: none;
+		}
+
+		.owl-nav {
+			button.owl-next {
+				position: absolute;
+				top: 50%;
+				margin-top: -30px;
+				right: -5px;
+			}
+
+			button.owl-prev {
+				position: absolute;
+				top: 50%;
+				margin-top: -30px;
+				left: -5px;
+			}
+		}
+
+		// set min height on cardview__content
+		.cardview__content {
+			min-height: 101px;
+		}
+	}
+
+	&--partner {
+		padding: 24px 0;
+
+		.carousel__item {
+			height: 120px;
+			padding: 0px 10px;
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+			@include xlarge {
+				height: 90px;
+			}
+		}
+
+		img {
+			max-height: 110px !important;
+
+			width: auto !important;
+			margin: auto;
+
+			@include xlarge {
+				max-height: 70px !important;
+				max-width: 70px !important;
+			}
+		}
+	}
+}

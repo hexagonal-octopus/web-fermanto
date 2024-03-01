@@ -1,0 +1,141 @@
+.lists {
+   &--basket {
+      position: relative;
+      border-bottom: 2px solid #d2d2d2;
+
+      ul {
+         height: calc(100vh - 140px);
+         overflow: hidden;
+
+         @include xlarge {
+            height: calc(100vh - 330px);
+         }
+
+         @media screen and (max-height: 800px) and (min-width: 1200px) {
+            height: calc(100vh - 140px);
+         }
+      }
+
+      .lists__item {
+         display: flex;
+         flex-flow: row wrap;
+         align-items: flex-start;
+         padding: 16px;
+
+         &:nth-of-type(even) {
+            background: #f2f2f2;
+         }
+      }
+   }
+
+   &--grid {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      margin-left: -15px;
+      margin-right: -15px;
+   }
+
+   &--image {
+      ul {
+         display: flex;
+         flex-flow: row wrap;
+      }
+
+      .lists__item {
+         height: 90px;
+         box-shadow: 0px 2px 15px 0 rgba(0, 0, 0, 0.15);
+         background: white;
+         padding: 0 15px;
+         margin-right: 10px;
+         margin-bottom: 10px;
+         display: flex;
+         flex-flow: row wrap;
+         align-items: center;
+
+         img {
+            max-height: 70px;
+            display: block;
+         }
+      }
+   }
+
+   &--grid4 {
+      .lists__item {
+         width: 50%;
+         box-sizing: border-box;
+         padding: 0px 4px 8px;
+
+         @include medium {
+            width: 50%;
+            padding: 0px 8px 16px;
+         }
+
+         @include large {
+            width: 25%;
+         }
+
+         @include xlarge {
+            width: 25%;
+            padding: 0px 15px 30px;
+         }
+      }
+
+      // set min height on cardview__content
+      .cardview__content {
+         min-height: 100px;
+      }
+   }
+
+   ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      // @include xlarge {
+      // 	height: 505px;
+      // 	overflow-y: auto;
+      // }
+   }
+
+   &__thumb {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #d2d2d2;
+      overflow: hidden;
+      margin-right: 16px;
+   }
+
+   &__img {
+      max-height: 100%;
+      max-width: 100%;
+   }
+
+   &__content {
+      width: calc(100% - 70px);
+      text-align: left;
+   }
+
+   &__name-basket {
+      font-size: rem(13);
+      line-height: rem(20);
+      margin: 0;
+      margin-bottom: 4px;
+      font-family: $font-family-subline;
+      font-weight: normal;
+
+      @include xlarge {
+         font-size: rem(16);
+         line-height: rem(23);
+      }
+   }
+
+   &__info-basket {
+      font-size: rem(13);
+      margin: 0;
+      color: #909090;
+   }
+}
+
+.nicescroll-rails {
+   z-index: 1011 !important;
+}

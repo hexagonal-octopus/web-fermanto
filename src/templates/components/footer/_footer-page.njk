@@ -1,0 +1,34 @@
+<footer class="footer">
+   <div class="footer__top">
+      <div class="container">
+         <div class="row">
+            <div class="col-1of3">
+               <div class="footer__brand">
+                  <picture>
+                     <source  srcset="{{BASE_HREF}}assets/images/default/logo-large.png 250w, {{BASE_HREF}}assets/images/default/logo-large-retina.png 504w " media="(min-width:576px)">
+                     <img class="large-hero__image" srcset="{{BASE_HREF}}assets/images/default/logo-small.png 164w, {{BASE_HREF}}assets/images/default/logo-small-retina.png 328w" alt="Fermanto Logo">
+                  </picture>
+               </div>
+            </div>
+            <div class="col-1of3">
+               <h2 class="footer__title">Address</h2>
+               <div class="footer__text">
+                  <p>Jl. Penjernihan II no 1 Pav<br>Jakarta Pusat, Indonesia</p>
+                  <p>Phone: 021 5732816, 021 5732845<br>Fax: 021 5736678</p>
+               </div>
+            </div>
+            <div class="col-1of3">
+               <h2 class="footer__title">Quick Navigation</h2>
+               <div class="footer__navigation">
+                  {% include "components/navigation/_navigation-footer.njk" %}
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="footer__bottom">
+      <div class="container">
+         <span class="text-center">Copyright &copy; 2018. FermantoBevFood. All Right Reserved.</span>
+      </div>
+   </div>
+</footer>

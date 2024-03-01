@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Fermanto Bevfoods | Fermanto BevFoods</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180" />
+    <link rel="icon" href="./favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="./favicon-16x16.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="./favicon.ico" />
+
+    <link rel="stylesheet" href="./assets/styles/vendor/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/vendor/owl.carousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <!-- Slider Revolution CSS Files -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/vendor/revolution/settings.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/vendor/revolution/layers.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/vendor/revolution/navigation.css" />
+
+    <script src="./assets/scripts/vendor/modernizr.js"></script>
+    <script src="./assets/scripts/vendor/jquery/jquery.min.js"></script>
+
+    <!-- Slider Revolution core JavaScript files -->
+    <script type="text/javascript" src="./assets/scripts/vendor/revolution/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/vendor/revolution/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/vendor/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/vendor/revolution/extensions/revolution.extension.navigation.min.js"></script>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__wrapper">
+        <img src="./assets/images/default/img-logo-fermanto-small.png" alt="Preloader Image" />
+      </div>
+    </div>
+    <header class="header header--homepage">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar__wrapper">
+            <div class="navbar__brand">
+              <a href="./index.html">
+                <picture>
+                  <source srcset="./assets/images/default/logo-large.png 250w, ./assets/images/default/logo-large-retina.png 504w" media="(min-width:576px)" />
+                  <img
+                    class="large-hero__image"
+                    srcset="./assets/images/default/logo-small.png 164w, ./assets/images/default/logo-small-retina.png 328w"
+                    alt="Fermanto Logo"
+                  />
+                </picture>
+              </a>
+            </div>
+            <div class="navbar__nav">
+              <ul class="nav" id="mainNavigation">
+                <li class="nav__item">
+                  <a href="./brands.html" class="nav__link">Our Brands</a>
+                  <div class="nav__child">
+                    <ul class="subnav">
+                      <li><a href="./brand.html">Ahmad Tea</a></li>
+                      <li><a href="./brand.html">Campfire</a></li>
+                      <li><a href="./brand.html">Itsuki</a></li>
+                      <li><a href="./brand.html">Jays</a></li>
+                      <li><a href="./brand.html">John John</a></li>
+                      <li><a href="./brand.html">Krunchers</a></li>
+                      <li><a href="./brand.html">Pacific Foods</a></li>
+                      <li><a href="./brand.html">Pastarotti</a></li>
+                      <li><a href="./brand.html">Pfanner</a></li>
+                      <li><a href="./brand.html">Poco Loco</a></li>
+                      <li><a href="./brand.html">Pulmoll</a></li>
+                      <li><a href="./brand.html">Rocky Mountain</a></li>
+                      <li><a href="./brand.html">Snyder's</a></li>
+                      <li><a href="./brand.html">St Michel</a></li>
+                      <li><a href="./brand.html">Valledoro</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav__item"><a href="./recipes.html" class="nav__link">Recipes</a></li>
+                <li class="nav__item"><a href="./how-to-order.html" class="nav__link">How to Order</a></li>
+                <li class="nav__item"><a href="./contact.html" class="nav__link">Contact</a></li>
+              </ul>
+            </div>
+            <button class="button button--toggler-menu"><i data-feather="menu" class="button__icon"></i></button>
+            <button class="button button--basket" data-target="#modalBasket" data-toggle="modal">
+              <span class="button__icon"></span><span class="button__number" id="basketViewNum">99</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <article>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="slider">
+                <div class="slider__wrapper">
+                  <div class="slider__content">
+                    <div class="rev_slider_wrapper">
+                      <div class="rev_slider" id="rev_slider_fermanto" data-version="5.4.8" style="display: none">
+                        <ul>
+                          <li data-transition="fade">
+                            <img src="./assets/images/default/img-banner-1.jpg" alt="Banner 1" class="rev-slidebg" />
+                          </li>
+                          <li data-transition="fade">
+                            <img src="./assets/images/default/img-banner-2.jpg" alt="Banner 2" class="rev-slidebg" />
+                          </li>
+                          <li data-transition="fade">
+                            <img src="./assets/images/default/img-banner-3.jpg" alt="Banner 3" class="rev-slidebg" />
+                          </li>
+                          <li data-transition="fade">
+                            <img src="./assets/images/default/img-banner-4.jpg" alt="Banner 2" class="rev-slidebg" />
+                          </li>
+                          <li data-transition="fade">
+                            <img src="./assets/images/default/img-banner-5.jpg" alt="Banner 3" class="rev-slidebg" />
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="orlabel orlabel--vertical orlabel--hidden-small"><span>New Highlight</span></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="orlabel orlabel--mouse orlabel--hidden-small mt-3 justify-center">
+                <span class="orlabel__icon"><span></span></span> Scroll Down
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </header>
+
+    <section class="section section--yspace section--white">
+      <div class="container">
+        <div class="row row--align-items-center">
+          <div class="col-1of3">
+            <h2 class="section__title">Check Our<br />featured Products</h2>
+            <h5 class="section__subline mb-5">What most people search and ordered from Us.</h5>
+            <p class="section__text">For more products we have</p>
+            <a href="./products.html" class="button button--primary section__button">View All Products</a>
+          </div>
+          <div class="col-2of3">
+            <div class="carousel owl-carousel js-product-carousel carousel--featured">
+              <div class="carousel__item">
+                <div class="cardview">
+                  <a href="./product.html" class="cardview__link">
+                    <div class="cardview__wrapper">
+                      <div class="cardview__image">
+                        <img src="./assets/images/default/img-crostini-480.jpg" alt="Image Product" />
+                      </div>
+                      <div class="cardview__content">
+                        <div class="cardview__left">
+                          <h3 class="cardview__name">Cirri Crostini What Happened if over than max-length 30</h3>
+                          <span class="cardview__text">Brand <b>Valledoro</b></span>
+                        </div>
+                        <div class="cardview__right">
+                          <div class="cardview__price">Rp 175.000</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="orlabel orlabel--featured"><img src="./assets/images/default/img-star.png" alt="Featured Product" /></div>
+                  </a>
+                </div>
+              </div>
+              <!-- /.carousel__item -->
+              <div class="carousel__item">
+                <div class="cardview">
+                  <a href="./product.html" class="cardview__link">
+                    <div class="cardview__wrapper">
+                      <div class="cardview__image">
+                        <img src="./assets/images/default/img-crostini-480.jpg" alt="Image Product" />
+                      </div>
+                      <div class="cardview__content">
+                        <div class="cardview__left">
+                          <h3 class="cardview__name">Cirri Crostini</h3>
+                          <span class="cardview__text">Brand <b>Valledoro</b></span>
+                        </div>
+                        <div class="cardview__right">
+                          <div class="cardview__price">Rp 175.000</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="orlabel orlabel--featured"><img src="./assets/images/default/img-star.png" alt="Featured Product" /></div>
+                  </a>
+                </div>
+              </div>
+              <!-- /.carousel__item -->
+              <div class="carousel__item">
+                <div class="cardview">
+                  <a href="./product.html" class="cardview__link">
+                    <div class="cardview__wrapper">
+                      <div class="cardview__image">
+                        <img src="./assets/images/default/img-crostini-480.jpg" alt="Image Product" />
+                      </div>
+                      <div class="cardview__content">
+                        <div class="cardview__left">
+                          <h3 class="cardview__name">Cirri Crostini</h3>
+                          <span class="cardview__text">Brand <b>Valledoro</b></span>
+                        </div>
+                        <div class="cardview__right">
+                          <div class="cardview__price">Rp 175.000</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="orlabel orlabel--featured"><img src="./assets/images/default/img-star.png" alt="Featured Product" /></div>
+                  </a>
+                </div>
+              </div>
+              <!-- /.carousel__item -->
+              <div class="carousel__item">
+                <div class="cardview">
+                  <a href="./product.html" class="cardview__link">
+                    <div class="cardview__wrapper">
+                      <div class="cardview__image">
+                        <img src="./assets/images/default/img-crostini-480.jpg" alt="Image Product" />
+                      </div>
+                      <div class="cardview__content">
+                        <div class="cardview__left">
+                          <h3 class="cardview__name">Cirri Crostini</h3>
+                          <span class="cardview__text">Brand <b>Valledoro</b></span>
+                        </div>
+                        <div class="cardview__right">
+                          <div class="cardview__price">Rp 175.000</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="orlabel orlabel--featured"><img src="./assets/images/default/img-star.png" alt="Featured Product" /></div>
+                  </a>
+                </div>
+              </div>
+              <!-- /.carousel__item -->
+            </div>
+            <div class="orlabel orlabel--hidden-small" style="margin-left: 15px"><span>Featured Products</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--yspace section--white">
+      <div class="container">
+        <h2 class="section__title text-center">Recipes</h2>
+        <h5 class="section__subline mb-3 text-center">Pump your creativity and enjoy with your lovable ones. <a href="#">View it All</a></h5>
+        <div class="carousel owl-carousel js-recipe-carousel carousel--recipe">
+          <div class="carousel__item">
+            <div class="cardview">
+              <a href="#" class="cardview__link" title="Pumpkin Pecan Blondies">
+                <div class="cardview__wrapper">
+                  <div class="cardview__image">
+                    <img src="./assets/images/default/img-recipe-pumpkin-pecan-blondies.jpg" alt="Image Product" />
+                  </div>
+                  <div class="cardview__content">
+                    <div class="cardview__left cardview__left--full">
+                      <h3 class="cardview__name">Pumpkin Pecan Blondies</h3>
+                      <span class="cardview__text">Presented in <b>Pacific Foods</b></span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /.carousel__item -->
+          <div class="carousel__item">
+            <div class="cardview">
+              <a href="#" class="cardview__link" title="Slow Cooker Green Curry Chicken Tacos with Organic Bone Broth plus Protein">
+                <div class="cardview__wrapper">
+                  <div class="cardview__image">
+                    <img src="./assets/images/default/img-recipe-slow-cooker-green-curry.jpg" alt="Image Recipe" />
+                  </div>
+                  <div class="cardview__content">
+                    <div class="cardview__left cardview__left--full">
+                      <h3 class="cardview__name">Slow Cooker Green Curry Chicken Tacos with Organic Bone Broth plus Protein</h3>
+                      <span class="cardview__text">Presented in <b>Valledoro</b></span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /.carousel__item -->
+          <div class="carousel__item">
+            <div class="cardview">
+              <a href="#" class="cardview__link" title="Coconut Cauliflower Tacos">
+                <div class="cardview__wrapper">
+                  <div class="cardview__image">
+                    <img src="./assets/images/default/img-recipe-coconut-cauliflower-tacos.jpg" alt="Image Recipe" />
+                  </div>
+                  <div class="cardview__content">
+                    <div class="cardview__left cardview__left--full">
+                      <h3 class="cardview__name">Coconut Cauliflower Tacos Coconut Cauliflower Tacos Coconut Cauliflower Tacos</h3>
+                      <span class="cardview__text">Presented in <b>Valledoro</b></span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /.carousel__item -->
+          <div class="carousel__item">
+            <div class="cardview">
+              <a href="#" class="cardview__link">
+                <div class="cardview__wrapper">
+                  <div class="cardview__image">
+                    <img src="./assets/images/default/img-recipe-pumpkin-pecan-blondies.jpg" alt="Image Recipe" />
+                  </div>
+                  <div class="cardview__content">
+                    <div class="cardview__left cardview__left--full">
+                      <h3 class="cardview__name">Pumpkin Pecan Blondies</h3>
+                      <span class="cardview__text">Presented in <b>Pacific Foods</b></span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /.carousel__item -->
+        </div>
+      </div>
+    </section>
+    <section class="section section--vspace section--white">
+      <div class="pattern-offset">
+        <div class="container">
+          <div class="row">
+            <div class="col-3of3">
+              <div class="section__space">
+                <h2 class="section__title">Who We Are</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2of3">
+              <div class="section__space">
+                <div class="section__text mb-4">
+                  <p>
+                    We are one of the youngest and fastest growing Imports and Distribution Company in Indonesia. Since our establishment we have grown in a
+                    very short time to become one of the leading suppliers of foodstuffs in Indonesian modern trade
+                  </p>
+                </div>
+                <a href="#" class="button button--secondary">Learn More</a>
+              </div>
+            </div>
+            <div class="col-1of3">
+              <img class="section__image" src="./assets/images/default/img-feature-about.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pattern-offset--pull">
+        <div class="container">
+          <div class="row">
+            <div class="col-2of3">
+              <div class="carousel js-partner-carousel carousel--partner owl-carousel">
+                <div class="carousel__item"><img src="./assets/images/partner/img-abuella.jpg" alt="image partner" /></div>
+                <div class="carousel__item"><img src="./assets/images/partner/img-aeon.jpg" alt="image partner" /></div>
+                <div class="carousel__item"><img src="./assets/images/partner/img-aerofood.jpg" alt="image partner" /></div>
+                <div class="carousel__item"><img src="./assets/images/partner/img-alfamart.jpg" alt="image partner" /></div>
+                <div class="carousel__item"><img src="./assets/images/partner/img-allfresh.jpg" alt="image partner" /></div>
+                <div class="carousel__item"><img src="./assets/images/partner/img-artisans.jpg" alt="image partner" /></div>
+                <div class="carousel__item"><img src="./assets/images/partner/img-bali-bunda.jpg" alt="image partner" /></div>
+                <div class="carousel__item"><img src="./assets/images/partner/img-bali-deli.jpg" alt="image partner" /></div>
+                <div class="carousel__item"><img src="./assets/images/partner/img-bca-prioritas.jpg" alt="image partner" /></div>
+                <div class="carousel__item"><img src="./assets/images/partner/img-bils.jpg" alt="image partner" /></div>
+              </div>
+              <!-- /END Carousel -->
+              <div class="orlabel orlabel--hidden-small" style="margin-left: 15px"><span>Distribution Channels</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--yspace section--white">
+      <div class="container">
+        <h2 class="section__title text-center">Our Brands</h2>
+        <h5 class="section__subline mb-3 text-center">You're in a good Company.</h5>
+        <div class="row row--justify-center row--brands">
+          <div class="brand-item">
+            <a href="./brand.html" title="Ahmad Tea"><img src="./assets/images/default/img-logo-ahmad-tea.jpg" alt="Ahmad Tea" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="Campfire"><img src="./assets/images/default/img-logo-campfire.jpg" alt="Campfire" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="Itsuki"><img src="./assets/images/default/img-logo-itsuki.jpg" alt="Itsukifoods" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="Jays"><img src="./assets/images/default/img-logo-jays.jpg" alt="Jays" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="John John"><img src="./assets/images/default/img-logo-johnjohn.jpg" alt="John John" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="Krunchers"><img src="./assets/images/default/img-logo-krunchers.jpg" alt="Krunchers" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="Pacifi Food"><img src="./assets/images/default/img-logo-pacific-food.jpg" alt="Pacific Food" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="Pastarotti"><img src="./assets/images/default/img-logo-pastarotti.jpg" alt="Pastarotti" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="Pfanner"><img src="./assets/images/default/img-logo-pfanner.jpg" alt="Pfanner" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="Poco Loco"><img src="./assets/images/default/img-logo-poco-loco.jpg" alt="Poco Loco" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="Pulmoll"><img src="./assets/images/default/img-logo-pulmoll.jpg" alt="Pulmoll" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="Rocky Mountain"><img src="./assets/images/default/img-logo-rocky-mountain.jpg" alt="Rocky Mountain" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="Snyders"><img src="./assets/images/default/img-logo-snyders.jpg" alt="Snyders" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="StMichel"><img src="./assets/images/default/img-logo-stmichel.jpg" alt="St Michel" /></a>
+          </div>
+          <div class="brand-item">
+            <a href="./brand.html" title="Valledoro"><img src="./assets/images/default/img-logo-valledoro.jpg" alt="Valledoro" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-1of3">
+              <div class="footer__brand">
+                <picture>
+                  <source srcset="./assets/images/default/logo-large.png 250w, ./assets/images/default/logo-large-retina.png 504w" media="(min-width:576px)" />
+                  <img
+                    class="large-hero__image"
+                    srcset="./assets/images/default/logo-small.png 164w, ./assets/images/default/logo-small-retina.png 328w"
+                    alt="Fermanto Logo"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="col-1of3">
+              <h2 class="footer__title">Address</h2>
+              <div class="footer__text">
+                <p>Jl. Penjernihan II no 1 Pav<br />Jakarta Pusat, Indonesia</p>
+                <p>Phone: 021 5732816, 021 5732845<br />Fax: 021 5736678</p>
+              </div>
+            </div>
+            <div class="col-1of3">
+              <h2 class="footer__title">Quick Navigation</h2>
+              <div class="footer__navigation">
+                <ul>
+                  <li><a href="./products.html">Products</a></li>
+                  <li><a href="./brands.html">Our Brands</a></li>
+                  <li><a href="./recipes.html">Recipes</a></li>
+                  <li><a href="./about.html">About Us</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                  <li><a href="./how-to-order.html">How To Order</a></li>
+                  <li><a href="./basket-list.html">My Basket</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <span class="text-center">Copyright &copy; 2018. FermantoBevFood. All Right Reserved.</span>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal--basket" id="modalBasket">
+      <div class="modal__wrapper">
+        <div class="modal__dialog">
+          <div class="modal__header">
+            <div class="orlabel"><span>Added Items</span></div>
+            <button class="button modal__close" data-dismiss="modal"><i class="button__icon" data-feather="x"></i></button>
+          </div>
+          <div class="modal__body">
+            <div class="basketview">
+              <!-- ===================== -->
+              <!--  IF THERE IS NO ITEM  -->
+              <!-- ===================== -->
+
+              <!-- ======================= -->
+              <!-- ELSEIF THERE IS ITEM(S) -->
+              <!-- ======================= -->
+              <div class="lists lists--basket">
+                <ul>
+                  <li class="lists__item">
+                    <div class="lists__thumb">
+                      <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img" />
+                    </div>
+                    <div class="lists__content">
+                      <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                      <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                    </div>
+                  </li>
+                  <!-- /.lists__item -->
+                  <li class="lists__item">
+                    <div class="lists__thumb">
+                      <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img" />
+                    </div>
+                    <div class="lists__content">
+                      <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                      <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                    </div>
+                  </li>
+                  <!-- /.lists__item -->
+                  <li class="lists__item">
+                    <div class="lists__thumb">
+                      <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img" />
+                    </div>
+                    <div class="lists__content">
+                      <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                      <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                    </div>
+                  </li>
+                  <!-- /.lists__item -->
+                  <li class="lists__item">
+                    <div class="lists__thumb">
+                      <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img" />
+                    </div>
+                    <div class="lists__content">
+                      <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                      <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                    </div>
+                  </li>
+                  <!-- /.lists__item -->
+                  <li class="lists__item">
+                    <div class="lists__thumb">
+                      <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img" />
+                    </div>
+                    <div class="lists__content">
+                      <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                      <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                    </div>
+                  </li>
+                  <!-- /.lists__item -->
+                  <li class="lists__item">
+                    <div class="lists__thumb">
+                      <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img" />
+                    </div>
+                    <div class="lists__content">
+                      <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                      <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                    </div>
+                  </li>
+                  <!-- /.lists__item -->
+                  <li class="lists__item">
+                    <div class="lists__thumb">
+                      <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img" />
+                    </div>
+                    <div class="lists__content">
+                      <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                      <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                    </div>
+                  </li>
+                  <!-- /.lists__item -->
+                  <li class="lists__item">
+                    <div class="lists__thumb">
+                      <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="lists__img" />
+                    </div>
+                    <div class="lists__content">
+                      <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                      <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                    </div>
+                  </li>
+                  <!-- /.lists__item -->
+                </ul>
+              </div>
+              <!-- /.lists-basket -->
+              <div class="basketview__footer">
+                <div class="basketview__total">
+                  <p class="basketview__label">Total Price</p>
+                  <h2 class="basketview__price-total">Rp. 2.625.000</h2>
+                </div>
+                <!-- /.basketview__total -->
+                <div class="basketview__actions">
+                  <a href="./basket-list.html" class="button button--primary button--icon-text"
+                    ><span class="button__icon checkout"></span><span class="button__text">View My Basket</span></a
+                  >
+                  <p class="ornament">or</p>
+                  <a href="./products.html" class="button button--link">Continue Shopping</a>
+                </div>
+                <!-- /.basketview__actions -->
+              </div>
+              <!-- /.basketview__footer -->
+              <!-- ==================== -->
+              <!-- ====== ENDIF ======= -->
+              <!-- ==================== -->
+            </div>
+            <!-- /.basketview -->
+          </div>
+          <!-- /.modal__body -->
+        </div>
+        <!-- /.modal__dialog -->
+      </div>
+      <!-- /.modal__wrapper -->
+    </div>
+    <!-- /.modal -->
+    <script src="./assets/scripts/vendor/jquery.nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="./assets/scripts/vendor/feather-icons/feather.min.js"></script>
+    <script src="./assets/scripts/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

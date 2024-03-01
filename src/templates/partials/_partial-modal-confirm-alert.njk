@@ -1,0 +1,23 @@
+<div class="modal modal--alt" id="modalConfirmAlert">
+   <div class="modal__wrapper">
+      <div class="modal__dialog">
+         <div class="modal__header">
+            {# <div class="orlabel"><span>Notification</span></div> #}
+            <button class="button modal__close" data-dismiss="modal"><i class="button__icon" data-feather="x"></i></button>
+         </div>
+         <div class="modal__body">
+            <div class="modal__image">
+               <img src="{{BASE_HREF}}assets/images/default/img-alert-triangle.png" alt="Thankyou Image" height="41">
+            </div>
+            <h2 class="modal__headline text-danger">Konfirmasi Hapus Produk</h2>
+            <div class="modal__text">
+               <p>Apakah Anda yakin untuk menghapus produk ini? Produk akan hilang dari list belanja Anda.</p>
+            </div>
+            <div class="modal__action">
+               <button class="button button--danger" id="buttonConfirmed">Ya, Hapus produk ini</button>
+               <button class="button button--link-gray" data-dismiss="modal">Batal, Tetap simpan</button>
+            </div>
+         </div><!-- /.modal__body -->
+      </div><!-- /.modal__dialog -->
+   </div><!-- /.modal__wrapper -->
+</div><!-- /.modal -->

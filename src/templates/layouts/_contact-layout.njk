@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="format-detection" content="telephone=no">
+   <title>Fermanto Bevfoods | {{BASE_TITLE}}</title>
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="{{BASE_HREF}}apple-touch-icon.png" sizes="180x180" />
+   <link rel="icon" href="{{BASE_HREF}}favicon-32x32.png" sizes="32x32" type="image/png" />
+   <link rel="icon" href="{{BASE_HREF}}favicon-16x16.png" sizes="16x16" type="image/png" />
+   <link rel="icon" href="{{BASE_HREF}}favicon.ico"/>
+
+   <link rel="stylesheet" href="{{BASE_HREF}}assets/styles/vendor/normalize.css/normalize.css" />
+   <link rel="stylesheet" href="{{BASE_HREF}}assets/styles/vendor/owl.carousel/assets/owl.carousel.min.css" />
+   <link rel="stylesheet" href="{{BASE_HREF}}assets/styles/style.css" />
+
+   <script src="{{BASE_HREF}}assets/scripts/vendor/modernizr.js" ></script>
+   <script src="{{BASE_HREF}}assets/scripts/vendor/jquery/jquery.min.js" ></script>
+</head>
+<body>
+   {% include "components/elements/_preloader.njk" %}
+   {% include "components/header/_header-page.njk" %}
+   {% block main %}{% endblock %}
+   {% include "components/footer/_footer-mini.njk" %}
+   {% include "components/navigation/_navigation-basket.njk" %}
+   {% block post_main %}{% endblock %}
+   <script src="{{BASE_HREF}}assets/scripts/vendor/jquery.nicescroll/jquery.nicescroll.min.js" ></script>
+   <script src="{{BASE_HREF}}assets/scripts/vendor/feather-icons/feather.min.js" ></script>
+   <script type="text/javascript" src="{{BASE_HREF}}assets/scripts/main.js"></script>
+</body>
+</html>

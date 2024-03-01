@@ -1,0 +1,36 @@
+{% extends "layouts/_page-layout.njk" %}
+{% set BASE_TITLE = "Brand Item" %}
+{% set BASE_HREF = "./" %}
+
+{% block main %}
+<section class="section section--gradient-bottom section--yspace">
+   <div class="container">
+      {% include "partials/_partial-brand-section.njk" %}
+   </div>
+</section>
+<section class="section section--white section--yspace" id="brandProducts">
+   <div class="container">
+      <div class="row mb-3">
+         <div class="col-3of4">
+            <h2 class="section__title">Products</h2>
+         </div>
+         <div class="col-1of4">
+            {% include "components/elements/_select-category.njk" %}
+         </div>
+      </div>
+      <div class="row">
+         <div class="col">
+            {% include "components/elements/_filter-tag.njk" %}
+         </div>
+      </div>
+      <div class="row">
+         <div class="col">
+            {% include "partials/_partial-product-list.njk" %}
+            <div class="mt-4">
+               {% include "components/navigation/_pagination.njk" %}
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+{% endblock %}

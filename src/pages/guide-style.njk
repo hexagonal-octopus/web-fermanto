@@ -1,0 +1,157 @@
+{% extends "layouts/_page-layout.njk" %}
+
+{% set BASE_HREF = "./" %}
+{% set BASE_TITLE = "Fermanto BevFoods" %}
+
+{% block main %}
+{% include "partials/_partial-about-profile.njk" %}
+<section class="section section--yspace section--white">
+   <div class="container">
+      <h1>Navigation Steps</h1>
+      <div class="row">
+         <div class="col">
+            {% include "partials/_partial-nav-steps.njk" %}
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Pagination</h1>
+     {% include "components/navigation/_pagination.njk" %}
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Buttons</h1>
+      <button class="button button--primary">View All Product</button>
+      <button class="button button--secondary">View All Product</button>
+      <button class="button button--tertiary">Continue Shopping</button>
+      <button class="button button--primary" disabled>Disabled Button</button>
+      <button class="button button--secondary" disabled>Disabled Button</button>
+      <button class="button button--tertiary" disabled>Disabled Button</button>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Toast Notification</h1>
+      <div class="toast toast--visible" style="display: block">
+         <div class="toast__wrapper">
+            <span class="toast__message">
+               Default Toast Notification
+            </span>
+            <span class="toast__close" data-dismiss="toast"><i data-feather="x"></i></span>
+         </div>
+      </div>
+      <div class="toast toast--success toast--visible" style="display: block">
+         <div class="toast__wrapper">
+            <span class="toast__icon"></span>
+            <span class="toast__message">
+               Daftar Belanja berhasil terupdate
+            </span>
+            <span class="toast__close" data-dismiss="toast"><i data-feather="x"></i></span>
+         </div>
+      </div>
+      <div class="toast toast--error toast--visible" style="display: block">
+         <div class="toast__wrapper">
+            <span class="toast__icon"></span>
+            <span class="toast__message">
+               Tidak dapat update Daftar Belanja, dikarenakan over kuota. Jadi pilihlah yang tepat.
+            </span>
+            <span class="toast__close" data-dismiss="toast"><i data-feather="x"></i></span>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Select Box</h1>
+      <div class="row">
+         <div class="col-1of4">
+            {% include "components/elements/_selectbox.njk" %}
+         </div>
+         <div class="col-1of4">
+            {% include "components/elements/_select-category.njk" %}
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Lists Products</h1>
+      {% include "components/elements/_lists-grid-products.njk" %}
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Zoom Product</h1>
+      <div class="row">
+         <div class="col-2of4">
+            {% include "partials/_partial-product-zoom.njk" %}
+         </div>
+         <div class="col-2of4">
+            {% include "partials/_partial-product-detail.njk" %}
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Basket List</h1>
+      {% include "partials/_partial-basket-list.njk" %}
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Checkout Form</h1>
+      <div class="row">
+         <div class="col-3of4">
+            {% include "partials/_partial-checkout-form.njk" %}
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Modal</h1>
+      <div class="row">
+         <div class="col-4of4">
+            <button class="button button--primary" data-toggle="modal" data-target="#modalThankyou">Call Modal Thankyou</button>
+            <button class="button button--primary" data-toggle="modal" data-target="#modalSuccess">Call Modal Success</button>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Sidebar Information</h1>
+      <div class="row">
+         <div class="col-1of3">
+            {% include "partials/_partial-sidebar-address.njk" %}
+         </div>
+         <div class="col-1of3">
+            {% include "partials/_partial-sidebar-helpdesk.njk" %}
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--tspace section--white">
+   <div class="container">
+      <h1>Brand Home</h1>
+      {% include "partials/_partial-brand-section.njk" %}
+   </div>
+</section>
+<section class="section section--yspace section--white">
+   <div class="container">
+      <h1>Partnership</h1>
+      {% include "partials/_partial-partnership.njk" %}
+   </div>
+</section>
+
+{% endblock %}
+
+{% block post_main %}
+{% include "partials/_partial-modal-thankyou.njk" %}
+{% include "partials/_partial-modal-success.njk" %}
+{% include "partials/_partial-modal-confirm-alert.njk" %}
+{% endblock %}

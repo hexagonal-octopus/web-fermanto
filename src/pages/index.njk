@@ -1,0 +1,11 @@
+{% extends "layouts/_default-layout.njk" %}
+
+{% set BASE_HREF = "./" %}
+{% set BASE_TITLE = "Fermanto BevFoods" %}
+
+{% block main %}
+{% include "partials/_partial-featured-product.njk" %}
+{% include "partials/_partial-featured-recipes.njk" %}
+{% include "partials/_partial-featured-about.njk" %}
+{% include "partials/_partial-featured-brands.njk" %}
+{% endblock %}

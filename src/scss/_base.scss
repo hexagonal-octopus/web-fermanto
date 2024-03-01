@@ -1,0 +1,35 @@
+// ***********************************
+// BASE
+// ***********************************
+html {
+	height: 100%;
+}
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-family: $font-family-base;
+	background: white;
+	color: #202020;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+.body {
+	&--footer-bottom {
+		box-sizing: border-box;
+		position: relative;
+		padding-bottom: 70px;
+		min-height: 100%;
+
+		.footer {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+		}
+	}
+}

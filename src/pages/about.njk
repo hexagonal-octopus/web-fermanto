@@ -1,0 +1,28 @@
+{% extends "layouts/_page-layout.njk" %}
+{% set BASE_TITLE = "About Us" %}
+{% set BASE_HREF = "./" %}
+
+{% block main %}
+{% include "partials/_partial-about-profile.njk" %}
+<section class="section--gradient-bottom section--yspace">
+   <div class="container">
+      <h1 class="section__title text-center mb-4">partnerships</h2>
+      <div class="mb-3">
+         <h3 class="section__heading">Restaurant &amp; Cafe</h3>
+         {% include "partials/_partial-partnership.njk" %}
+      </div>
+      <div class="mb-3">
+         <h3 class="section__heading">Supermarket</h3>
+         {% include "partials/_partial-partnerships-supermarket.njk" %}
+      </div>
+      <div class="mb-3">
+         <h3 class="section__heading">Corporation</h3>
+         {% include "partials/_partial-partnership-corporation.njk" %}
+      </div>
+      <div class="mb-3">
+         <h3 class="section__heading">Convenience Store</h3>
+         {% include "partials/_partial-partnership-store.njk" %}
+      </div>
+   </div>
+</section>
+{% endblock %}

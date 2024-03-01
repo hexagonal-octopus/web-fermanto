@@ -1,0 +1,15 @@
+{% extends "layouts/_page-layout.njk" %}
+{% set BASE_TITLE = "Recipes" %}
+{% set BASE_HREF = "./" %}
+{% block main %}
+<section class="section section--gradient-bottom section--yspace">
+   <div class="container">
+      <h1 class="section__title mb-4">{{BASE_TITLE}}</h1>
+      {% include "partials/_partial-recipes.njk" %}
+      <div class="mt-4">
+         {% include "components/navigation/_pagination.njk" %}
+      </div>          
+   </div>
+</section>
+{% include "partials/_partial-featured-brands.njk" %}
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "layouts/_page-layout.njk" %}
+{% set BASE_HREF = "./" %}
+{% set BASE_TITLE = "Product Detail" %}
+
+{% block additional_scripts %}
+<script src="{{BASE_HREF}}assets/scripts/vendor/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<script src="{{BASE_HREF}}assets/scripts/basketList.js"></script>
+{% endblock %}
+
+{% block main %}
+<section class="section section--yspace section--gradient-bottom">
+   <div class="container">
+      <div class="row">
+         <div class="col-2of4">
+            {% include "partials/_partial-product-zoom.njk" %}
+         </div>
+         <div class="col-2of4">
+            {% include "partials/_partial-product-detail.njk" %}
+         </div>
+      </div>
+   </div>
+</section>
+<section class="section section--white section--yspace">
+   <div class="container">
+      <h2 class="section__title text-center mb-4">Other Products from this brand</h2>
+      {% include "partials/_partial-other-product.njk" %}
+   </div>
+</section>
+{% endblock %}
+
+{% block post_main %}
+<div class="toast toast--success">
+   <div class="toast__wrapper">
+      <span class="toast__icon"></span>
+      <span class="toast__message">
+         Daftar Belanja berhasil terupdate
+      </span>
+      <span class="toast__close" data-dismiss="toast"><i data-feather="x"></i></span>
+   </div>
+</div>
+<div class="toast toast--error">
+   <div class="toast__wrapper">
+      <span class="toast__icon"></span>
+      <span class="toast__message">
+         Tidak dapat update Daftar Belanja, dikarenakan over kuota.
+      </span>
+      <span class="toast__close" data-dismiss="toast"><i data-feather="x"></i></span>
+   </div>
+</div>
+{# Enabling Loader #}
+{# <div class="loader">
+   <div class="loader__wrapper"></div>
+</div> #}
+{% endblock %}

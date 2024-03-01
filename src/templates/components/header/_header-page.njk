@@ -1,0 +1,21 @@
+<header class="header">
+   <nav class="navbar">
+      <div class="container">
+         <div class="navbar__wrapper">
+            <div class="navbar__brand">
+               <a href="{{BASE_HREF}}index.html">
+                  <picture>
+                     <source  srcset="{{BASE_HREF}}assets/images/default/logo-large.png 250w, {{BASE_HREF}}assets/images/default/logo-large-retina.png 504w " media="(min-width:576px)">
+                     <img class="large-hero__image" srcset="{{BASE_HREF}}assets/images/default/logo-small.png 164w, {{BASE_HREF}}assets/images/default/logo-small-retina.png 328w" alt="Fermanto Logo">
+                  </picture>
+               </a>
+            </div>
+            {% include "components/navigation/_navigation-menu.njk" %}
+            <button class="button button--toggler-menu"><i data-feather="menu" class="button__icon"></i></button>
+            <button class="button button--basket" data-target="#modalBasket" data-toggle="modal">
+               <span class="button__icon"></span><span class="button__number" id="basketViewNum">99</span>
+            </button>
+         </div>
+      </div>
+   </nav>
+</header>

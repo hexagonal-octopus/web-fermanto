@@ -1,0 +1,27 @@
+{% extends "layouts/_contact-layout.njk" %}
+{% set BASE_TITLE = "Contact Us" %}
+{% set BASE_HREF = "./" %}
+
+{% block main %}
+<section class="section section--gradient-bottom section--yspace">
+   <div class="container">
+      <h1 class="section__title mb-4">{{BASE_TITLE}}</h1>
+      <div class="row">
+         <div class="col-2of3 pr-5-xl">
+            <div class="section__text mb-4">
+               <p>If you are interested in getting in touch with Fermanto Bevfoods, please feel free to call us at <a href="tel:0215732816" target="_blank">021 5732816</a> or Email us at <a href="mailto:info@fermantobevfoods.co.id" target="_blank">info@fermantobevfoods.co.id</a>, We’d love to hear from you!</p>
+            </div>
+            {% include "partials/_partial-contact-form.njk" %}
+         </div>
+         <div class="col-1of3">
+            {% include "partials/_partial-sidebar-address.njk" %}
+         </div>
+      </div>
+   </div>
+</section>
+{% include "partials/_partial-featured-brands.njk" %}
+{% endblock %}
+
+{% block post_main %}
+{% include "partials/_partial-modal-success.njk" %}
+{% endblock %}

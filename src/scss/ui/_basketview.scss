@@ -1,0 +1,126 @@
+.basketview {
+   &__total {
+      padding: 20px;
+   }
+
+   &__label {
+      text-align: right;
+      margin: 0;
+      margin-bottom: 4px;
+      font-size: rem(14);
+      color: #909090;
+   }
+
+   &__footer {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+
+      @media screen and (min-height: 800px) and (min-width: 1200px) {
+         display: block;
+      }
+   }
+
+   &__total,
+   &__actions {
+      width: 35%;
+      padding: 10px 15px;
+      box-sizing: border-box;
+
+      @media screen and (min-height: 800px) and (min-width: 1200px) {
+         width: 100%;
+         padding: 15px;
+      }
+   }
+
+   &__total {
+      order: 2;
+      width: 65%;
+
+      @media screen and (min-height: 800px) and (min-width: 1200px) {
+         width: 100%;
+      }
+   }
+
+   &__actions {
+      order: 1;
+      text-align: left;
+      @media screen and (min-height: 800px) and (min-width: 1200px) {
+         text-align: center;
+
+         .button {
+            margin-bottom: 0;
+         }
+
+         p {
+            margin: 0;
+            margin: 16px 0;
+         }
+      }
+   }
+
+   &__price-total {
+      text-align: right;
+      margin: 0;
+      margin-bottom: 8px;
+      font-size: rem(18);
+      line-height: rem(23);
+      font-family: $font-family-headline;
+      font-weight: normal;
+   }
+
+   .ornament {
+      display: none;
+      @media screen and (min-height: 800px) and (min-width: 1200px) {
+         display: block;
+      }
+   }
+
+   .button--link {
+      display: none;
+      @media screen and (min-height: 800px) and (min-width: 1200px) {
+         display: block;
+         text-align: center;
+      }
+   }
+
+   .button--icon-text {
+      display: inline-block;
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      padding: 0;
+      text-align: center;
+      margin-bottom: 0;
+
+      @media screen and (min-height: 800px) and (min-width: 1200px) {
+         display: flex;
+         flex-flow: row wrap;
+         align-items: center;
+         width: auto;
+         height: 50px;
+         border-radius: 20px;
+         margin-bottom: 18px;
+      }
+
+      .button__icon {
+         display: inline-block;
+         line-height: 42px;
+         margin-right: 0;
+         height: 42px;
+         position: relative;
+         top: -1px;
+         left: -1px;
+         @media screen and (min-height: 800px) and (min-width: 1200px) {
+            margin-right: 8px;
+         }
+      }
+
+      .button__text {
+         display: none;
+         @media screen and (min-height: 800px) and (min-width: 1200px) {
+            display: block;
+         }
+      }
+   }
+}

@@ -1,0 +1,82 @@
+{% extends "layouts/_email-layout.njk" %}
+{% set BASE_TITLE = "Email Manual Message" %}
+{% set BASE_HREF = "./" %}
+
+{% block email_header %}
+<!-- /////////// EMAIL HEADER /////////////// -->
+<!-- //////////////////////////////////////// -->
+<tr>
+   <td>
+      <table bgcolor="#009688" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+         <tr>
+            <td valign="middle" align="center" width="600px" style="padding-top: 10px;padding-bottom:15px;">
+               <!-- Please change base-path production for image logo -->
+               <img src="http://sandbox.cyberprimatama.id/fermantobevfoods/design/assets/images/default/logo-large.png" height="40" style="display:inline-block"/>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+{% endblock %}
+
+{% block email_content %}
+<!-- /////////// EMAIL CONTENT ////////////// -->
+<!-- //////////////////////////////////////// -->
+<tr>
+   <td>
+      <table bgcolor="#ffffff" border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+         <tr>
+            <td height="40" style="line-height:0px;">&nbsp;</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left" style="padding-left: 20px;padding-right:20px;">
+               <h2 style="margin: 0;font-size: 18px; line-height: 24px;font-family:'Poppins',sans-serif;color:#000000;font-weight:600;">Halo Ferguso,</h2>
+            </td>
+         </tr>
+         <tr>
+            <td height="16" style="line-height:0px;">&nbsp;</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left" style="padding-left: 20px;padding-right:20px;">
+               <p style="margin:0; font-size: 14px; color: #555;font-family:'Poppins',sans-serif;font-weight:400;line-height: 22px;font-weight:400;">We are contacting you as the named billing or technical contact for Jira, Confluence, Bitbucket, or another Atlassian product.
+We want to let you know that we are retiring the Atlassian Customer Agreement, and replacing it with new legal terms that are specific to deployment type (cloud or on-premise).<br><br>
+
+We've put together a summary of the most notable changes and also created FAQs to help you understand the changes taking place. As the above highlights do not cover every change, we would encourage you to read the full text of the new Cloud Terms of Service and Software License Agreement.<br><br>
+
+The new terms go into effect on November 1, 2018, for free accounts and new purchases. For existing paid subscriptions, the new terms will take effect on your first renewal after November 1, 2018. If you choose not to accept the updated terms, please make sure to cancel your support or cloud subscriptions prior to your next renewal, deactivate your auto-renewal settings, and refrain from ordering new Atlassian products.<br><br>
+
+Note: If you are a party to the Atlassian Government End User Agreement or an Enterprise License Agreement, these updates are subject to the terms that govern modifications to your existing agreement with us.
+Thank you for being an Atlassian customer!</p>
+            </td>
+         </tr>
+         <tr>
+            <td height="40" style="line-height:0px;">&nbsp;</td>
+         </tr>
+         <tr>
+            <td valign="top" align="left" style="padding-left: 20px;padding-right:20px;">
+               <p style="margin:0; font-size: 14px; color: #555;font-family:'Poppins',sans-serif;font-weight:400;line-height: 22px;">
+                  Sincerely,<br><br><br><span style="font-family:'Poppins',sans-serif;font-size: 15px; font-weight:600;line-height:24px;color: #000000;">Fermanto Bevfoods</span>
+               </p>
+            </td>
+         </tr>
+         <tr>
+            <td height="40" style="line-height:0px;">&nbsp;</td>
+         </tr>
+      </table>
+   </td>
+</tr>
+{% endblock %}
+
+{% block email_footer %}
+<!-- /////////// EMAIL FOOTER /////////////// -->
+<!-- //////////////////////////////////////// -->
+<tr>
+   <td height="20" style="line-height:0px;">&nbsp;</td>
+</tr>
+<tr>
+   <td style="color: #999999;font-size: 12px;" align="center">
+      Untuk pertanyaan ataupun saran, silahkan <a href="#" target="_blank" style="color:#009688;">Hubungi Kami</a>.<br>
+      Copyright &copy; 2018. Fermanto Bevfoods.
+   </td>
+</tr>
+{% endblock %}

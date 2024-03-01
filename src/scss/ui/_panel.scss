@@ -1,0 +1,43 @@
+.panel {
+	margin-bottom: 24px;
+	text-align: left;
+
+	&__header,
+	&__body {
+		padding: 6px 0;
+
+		p {
+			margin: 0;
+			position: relative;
+			padding-left: 32px;
+			box-sizing: border-box;
+			color: black;
+			font-family: $font-family-subline;
+			font-weight: normal;
+			font-size: rem(16);
+			line-height: rem(24);
+			margin: 0;
+		}
+
+		p:before {
+			content: 'Q:';
+			position: absolute;
+			top: 0;
+			left: 0;
+			font-family: $font-family-subline;
+			line-height: rem(24);
+			font-size: rem(16);
+			color: bold;
+		}
+	}
+
+	&__body {
+		p {
+			font-family: $font-family-base;
+		}
+
+		p:before {
+			content: 'A:';
+		}
+	}
+}

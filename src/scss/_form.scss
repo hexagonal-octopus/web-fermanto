@@ -1,0 +1,71 @@
+.form {
+	&__title {
+		font-size: rem(20);
+		line-height: rem(30);
+		margin: 0;
+	}
+
+	&__group {
+		margin-bottom: 24px;
+		text-align: left;
+
+		&--flex-row {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: center;
+			@include large {
+				justify-content: flex-start;
+			}
+		}
+	}
+
+	&__control {
+		border-radius: 2px;
+		box-sizing: border-box;
+		border: 1px solid #d2d2d2;
+		padding: 13px 10px;
+		margin: 8px 0px 4px;
+		line-height: em(24);
+		width: 100%;
+		font-size: rem(16);
+		color: black;
+
+		&--invalid {
+			border: 1px solid $color-red;
+
+			& ~ .form__feedback {
+				color: $color-red;
+			}
+		}
+	}
+
+	label {
+		font-size: rem(16);
+		color: black;
+		font-family: $font-family-base;
+		line-height: rem(23);
+		margin-bottom: 8px;
+	}
+
+	&__info,
+	&__feedback {
+		font-size: rem(14);
+		margin: 0;
+		color: #666;
+		line-height: rem(20);
+		display: block;
+		margin-top: 4px;
+	}
+}
+
+/** -- Hack for Input type Number -- **/
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}

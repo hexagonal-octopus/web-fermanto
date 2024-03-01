@@ -1,0 +1,69 @@
+<header class="header header--homepage">
+   <nav class="navbar">
+      <div class="container">
+         <div class="navbar__wrapper">
+            <div class="navbar__brand">
+               <a href="{{BASE_HREF}}index.html">
+                  <picture>
+                     <source  srcset="{{BASE_HREF}}assets/images/default/logo-large.png 250w, {{BASE_HREF}}assets/images/default/logo-large-retina.png 504w " media="(min-width:576px)">
+                     <img class="large-hero__image" srcset="{{BASE_HREF}}assets/images/default/logo-small.png 164w, {{BASE_HREF}}assets/images/default/logo-small-retina.png 328w" alt="Fermanto Logo">
+                  </picture>
+               </a>
+            </div>
+            {% include "components/navigation/_navigation-menu.njk" %}
+            <button class="button button--toggler-menu"><i data-feather="menu" class="button__icon"></i></button>
+            <button class="button button--basket" data-target="#modalBasket" data-toggle="modal">
+               <span class="button__icon"></span><span class="button__number" id="basketViewNum">99</span>
+            </button>
+         </div>
+      </div>
+   </nav>
+   <article>
+      <div class="container">
+         <div class="row">
+            <div class="col">
+               <div class="slider">
+                  <div class="slider__wrapper">
+                     <div class="slider__content">
+                        <div class="rev_slider_wrapper">
+                           <div class="rev_slider" id="rev_slider_fermanto" data-version="5.4.8" style="display:none">
+                              <ul>
+                                 <li data-transition="fade">
+                                    <img src="{{BASE_HREF}}assets/images/default/img-banner-1.jpg" alt="Banner 1" class="rev-slidebg">
+                                 </li>
+                                 <li data-transition="fade">
+                                    <img src="{{BASE_HREF}}assets/images/default/img-banner-2.jpg" alt="Banner 2" class="rev-slidebg">
+                                 </li>
+                                 <li data-transition="fade">
+                                    <img src="{{BASE_HREF}}assets/images/default/img-banner-3.jpg" alt="Banner 3" class="rev-slidebg">
+                                 </li>
+                                 <li data-transition="fade">
+                                    <img src="{{BASE_HREF}}assets/images/default/img-banner-4.jpg" alt="Banner 2" class="rev-slidebg">
+                                 </li>
+                                 <li data-transition="fade">
+                                    <img src="{{BASE_HREF}}assets/images/default/img-banner-5.jpg" alt="Banner 3" class="rev-slidebg">
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        {# <ul class="slider__navigation">
+                           <li class="active"><a href="#"></a></li>
+                           <li><a href="#"></a></li>
+                           <li><a href="#"></a></li>
+                        </ul> #}
+                     </div>
+                  </div>
+               </div>
+               <div class="orlabel orlabel--vertical orlabel--hidden-small"><span>New Highlight</span></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+               <div class="orlabel orlabel--mouse orlabel--hidden-small mt-3 justify-center">
+                  <span class="orlabel__icon"><span></span></span> Scroll Down
+               </div>
+            </div>
+         </div>
+      </div>
+   </article>
+</header>

@@ -1,0 +1,95 @@
+// ***********************************
+// VARIABLES
+// ***********************************
+
+// FONT-FACE USING MIXIN.SCSS
+@include font-face(
+	abc_modern_bold,
+	'../../assets/fonts/abc_modern_bold-webfont',
+	'normal',
+	'normal',
+	woff2 woff
+);
+@include font-face(
+	abc_modern_regular,
+	'../../assets/fonts/abc_modern_regular-webfont',
+	'normal',
+	'bold',
+	woff2 woff
+);
+@include font-face(
+	brandontext-regular,
+	'../../assets/fonts/brandontext-regular-webfont',
+	'normal',
+	'normal',
+	woff2 woff
+);
+
+@include font-face(
+	brandontext-regularitalic,
+	'../../assets/fonts/brandontext-regularitalic-webfont',
+	'normal',
+	'normal',
+	woff2 woff
+);
+
+@include font-face(
+	brandontext-light,
+	'../../assets/fonts/brandontext-light-webfont',
+	'normal',
+	'normal',
+	woff2 woff
+);
+
+@include font-face(
+	brandontext-bold,
+	'../../assets/fonts/brandontext-bold-webfont',
+	'normal',
+	'normal',
+	woff2 woff
+);
+
+$context: 24;
+
+// LAYOUT
+$mini: 320px;
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$xlarge: 1200px;
+$xxlarge: 1600px;
+
+$max-small: 575.98px;
+$max-medium: 767.98px;
+$max-large: 991.98px;
+$max-xlarge: 1199.98px;
+$max-xxlarge: 1599.98px;
+
+$max-height800: 799.98px;
+
+// TYPOGRAPHY
+$font-family-headline: abc_modern_bold, 'Segoe UI', Arial, sans-serif;
+$font-family-subline: abc_modern_regular, 'Segoe UI', Arial, sans-serif;
+$font-family-bold: brandontext-bold, 'Segoe UI', Arial, sans-serif;
+$font-family-base: brandontext-regular, 'Segoe UI', Arial, sans-serif;
+$font-family-light: brandontext-light, 'Segoe UI', Arial, sans-serif;
+$font-family-italic: brandontext-regularitalic, 'Segoe UI', Arial, sans-serif;
+
+// COLORS
+$color-primary: #2b6982;
+$color-secondary: #009688;
+$color-third: #119cad;
+
+$color-fourth: #f9a825;
+$color-fourth-lighter: #ffa43d;
+$color-fourth-darker: #e47c0c;
+
+$color-gray: #f2f2f2;
+$color-gray-darker: #e9e9e9;
+
+$color-red-lighter: #e65124;
+$color-red: #bf360c;
+$color-red-darker: #912301;
+
+// Color Gradient
+$gradient-primary: linear-gradient(-45deg, $color-third, $color-secondary);

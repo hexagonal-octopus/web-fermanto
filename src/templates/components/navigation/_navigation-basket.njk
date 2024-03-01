@@ -1,0 +1,115 @@
+<div class="modal modal--basket" id="modalBasket">
+   <div class="modal__wrapper">
+      <div class="modal__dialog">
+         <div class="modal__header">
+            <div class="orlabel"><span>Added Items</span></div>
+            <button class="button modal__close" data-dismiss="modal"><i class="button__icon" data-feather="x"></i></button>
+         </div>
+         <div class="modal__body">
+            <div class="basketview">
+               <!-- ===================== -->
+               <!--  IF THERE IS NO ITEM  -->
+               <!-- ===================== -->
+               {# <div class="basketview__text p-3">
+                  <img src="{{BASE_HREF}}assets/images/default/shopping-cart-small.png" height="50" class="img-responsive"/>
+                  <p>Keranjang Belanja kosong</p>
+                  <a href="./products.html" class="button button--primary">Mulai Belanja</a>
+               </div> #}
+               <!-- ======================= -->
+               <!-- ELSEIF THERE IS ITEM(S) -->
+               <!-- ======================= -->
+               <div class="lists lists--basket">
+                  <ul>
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="{{BASE_HREF}}assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="{{BASE_HREF}}assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="{{BASE_HREF}}assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="{{BASE_HREF}}assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="{{BASE_HREF}}assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="{{BASE_HREF}}assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="{{BASE_HREF}}assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                     <li class="lists__item">
+                        <div class="lists__thumb">
+                           <img src="{{BASE_HREF}}assets/images/default/img-crostini-50.jpg" alt="" class="lists__img">
+                        </div>
+                        <div class="lists__content">
+                           <h3 class="lists__name-basket">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                           <p class="lists__info-basket"><span class="lists__price">Rp 7.775.000</span> - <span class="lists__qty">9999 items</span></p>
+                        </div>
+                     </li><!-- /.lists__item -->
+                  </ul>
+               </div><!-- /.lists-basket -->
+               <div class="basketview__footer">
+                  <div class="basketview__total">
+                     <p class="basketview__label">Total Price</p>
+                     <h2 class="basketview__price-total">Rp. 2.625.000</h2>
+                  </div><!-- /.basketview__total -->
+                  <div class="basketview__actions">
+                     <a href="{{BASE_HREF}}basket-list.html" class="button button--primary button--icon-text"><span class="button__icon checkout"></span><span class="button__text">View My Basket</span></a>
+                     <p class="ornament">or</p>
+                     <a href="{{BASE_HREF}}products.html" class="button button--link">Continue Shopping</a>
+                  </div><!-- /.basketview__actions -->
+               </div><!-- /.basketview__footer -->
+               <!-- ==================== -->
+               <!-- ====== ENDIF ======= -->
+               <!-- ==================== -->
+            </div><!-- /.basketview -->
+         </div><!-- /.modal__body -->
+      </div><!-- /.modal__dialog -->
+   </div><!-- /.modal__wrapper -->
+</div><!-- /.modal -->

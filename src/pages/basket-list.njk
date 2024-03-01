@@ -1,0 +1,50 @@
+{% extends "layouts/_minimal-layout.njk" %}
+{% set BASE_TITLE = "My Basket Lists" %}
+{% set BASE_HREF = "./" %}
+
+{% block additional_scripts %}
+<script src="{{BASE_HREF}}assets/scripts/vendor/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<script src="{{BASE_HREF}}assets/scripts/basketList.js"></script>
+{% endblock %}
+
+{% block main %}
+<div class="section section--white section--yspace">
+   <div class="container">
+      <div class="row">
+         <div class="col-2of4">
+            <h1 class="section__title mb-0 mb-4-lg">{{BASE_TITLE}}</h1>
+         </div>
+         <div class="col-2of4">
+            <div class="text-right-lg">
+               {% include "partials/_partial-nav-steps.njk" %}
+            </div>
+         </div>
+      </div>
+      <div class="my-3 my-4-lg">
+         <!-- ======================================== -->
+         <!-- ============ IF IS EMPTY =============== -->
+         <!-- ======================================== -->
+         <div class="section__text text-center">
+            <img src="{{BASE_HREF}}assets/images/default/shopping-cart-medium.png" class="img-responsive mb-3" height="100" />
+            <p>Keranjang Belanja kosong</p>
+            <a href="./products.html" class="button button--primary">Mulai Belanja</a>
+         </div>
+         <!-- ======================================== -->
+         <!-- ================ ELSE ================== -->
+         <!-- ======================================== -->
+         {% include "partials/_partial-basket-list.njk" %}
+         <!-- ========================================= -->
+         <!-- ================ ENDIF ================== -->
+         <!-- ========================================= -->
+      </div>
+      <div class="display-flex justify-content-end">
+         <a href="{{BASE_HREF}}products.html" class="button button--tertiary mr-2" title="Kembali Berbelanja">Kembali Berbelanja</a>
+         <a href="{{BASE_HREF}}checkout.html" class="button button--primary" title="Checkout">Checkout</a>
+      </div>
+   </div>
+</div>
+{% endblock %}
+
+{% block post_main %}
+{% include "partials/_partial-modal-confirm-alert.njk" %}
+{% endblock %}

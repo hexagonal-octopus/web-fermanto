@@ -1,0 +1,19 @@
+// ***********************************
+// LINKS
+// ***********************************
+
+// a, a:visited {
+// 	text-decoration:none;
+// 	@include transition-all(.5s);
+// }
+// a:hover, a:active, a:focus {
+// 	@include transition-all(.5s);
+// }
+
+
+// ***********************************
+// TYPOGRAPHY
+// ***********************************
+.text-light{
+   font-family: $font-family-light;
+}

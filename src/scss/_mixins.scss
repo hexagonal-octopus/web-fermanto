@@ -1,0 +1,135 @@
+// ***********************************
+// MIXINS
+// ***********************************
+
+// Layout media queries
+@mixin mini {
+	@media (min-width: #{$mini}) {
+		@content;
+	}
+}
+
+@mixin small {
+	@media (min-width: #{$small}) {
+		@content;
+	}
+}
+
+@mixin medium {
+	@media (min-width: #{$medium}) {
+		@content;
+	}
+}
+
+@mixin large {
+	@media (min-width: #{$large}) {
+		@content;
+	}
+}
+
+@mixin xlarge {
+	@media (min-width: #{$xlarge}) {
+		@content;
+	}
+}
+
+@mixin xxlarge {
+	@media (min-width: #{$xxlarge}) {
+		@content;
+	}
+}
+
+@mixin max-mini {
+	@media (max-width: #{$max-mini}) {
+		@content;
+	}
+}
+
+@mixin max-small {
+	@media (max-width: #{$max-small}) {
+		@content;
+	}
+}
+
+@mixin max-medium {
+	@media (max-width: #{$max-medium}) {
+		@content;
+	}
+}
+
+@mixin max-large {
+	@media (max-width: #{$max-large}) {
+		@content;
+	}
+}
+
+@mixin max-xlarge {
+	@media (max-width: #{$max-xlarge}) {
+		@content;
+	}
+}
+
+@mixin max-xxlarge {
+	@media (max-width: #{$max-xxlarge}) {
+		@content;
+	}
+}
+
+@mixin max-height800 {
+	@media (min-height: 690px) and (max-height: #{$max-height800}) and (min-width: #{$xlarge}) {
+		@content;
+	}
+}
+
+// Font-face embed
+@mixin font-face(
+	$name,
+	$path,
+	$weight: null,
+	$style: null,
+	$exts: eot woff2 woff ttf svg
+) {
+	$src: null;
+	$extmods: (
+		eot: '?',
+		svg: '#' + str-replace($name, ' ', '_')
+	);
+	$formats: (
+		otf: 'opentype',
+		ttf: 'truetype'
+	);
+	@each $ext in $exts {
+		$extmod: if(
+			map-has-key($extmods, $ext),
+			$ext + map-get($extmods, $ext),
+			$ext
+		);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append(
+			$src,
+			url(quote($path + '.' + $extmod)) format(quote($format)),
+			comma
+		);
+	}
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+// Effects
+@mixin transition-all($time: 0.5s) {
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: all $time ease-in-out;
+	-ms-transition: all $time ease-in-out;
+	-o-transition: all $time ease-in-out;
+	transition: all $time ease-in-out;
+}
+@mixin fade($time: 0.3s) {
+	-webkit-transition: background-color $time ease-in-out;
+	-moz-transition: background-color $time ease-in-out;
+	-o-transition: background-color $time ease-in-out;
+	-ms-transition: background-color $time ease-in-out;
+	transition: background-color $time ease-in-out;
+}

@@ -1,0 +1,218 @@
+.table {
+	&__content {
+		box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+		padding: 16px 24px;
+	}
+
+	&__row {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: stretch;
+		align-items: center;
+
+		&--no-border {
+			border-bottom: 0;
+		}
+
+		&--justify-end {
+			justify-content: flex-end;
+		}
+	}
+
+	&__header {
+		border-bottom: 1px solid #d2d2d2;
+		display: none;
+		@include large {
+			display: block;
+		}
+	}
+
+	&__heading {
+		font-family: $font-family-bold;
+		font-size: rem(16);
+		line-height: rem(23);
+		text-transform: uppercase;
+	}
+
+	&--basket {
+		.table__content {
+			box-sizing: border-box;
+			margin-bottom: 24px;
+			padding: 16px 8px;
+
+			@include large {
+				padding: 40px 24px;
+			}
+		}
+
+		.table__col {
+			flex: initial;
+			width: 100%;
+			padding: 0;
+			box-sizing: border-box;
+			text-align: left;
+			padding-top: 24px;
+			padding-bottom: 24px;
+			position: relative;
+
+			&:before {
+				content: attr(data-label);
+				position: absolute;
+				top: 0;
+				left: 0;
+				font-size: rem(14);
+				line-height: rem(21);
+				color: #909090;
+			}
+
+			// @include medium {
+			// 	padding: 16px;
+			// }
+
+			@include large {
+				padding: 16px;
+				&:before {
+					display: none;
+				}
+			}
+		}
+
+		.table__row {
+			border-bottom: 1px solid #d2d2d2;
+			padding: 16px;
+			align-items: flex-start;
+
+			@include large {
+				align-items: center;
+			}
+
+			@include xlarge {
+				padding: 0;
+			}
+
+			&--no-border {
+				border-bottom: 0;
+			}
+		}
+
+		.table__col:nth-of-type(1) {
+			@include medium {
+				width: 100%;
+			}
+
+			@include large {
+				width: 35%;
+			}
+
+			@include xlarge {
+				width: 40%;
+			}
+		}
+
+		.table__col:nth-of-type(2) {
+			text-align: right;
+			@include medium {
+				width: 30%;
+			}
+
+			@include large {
+				width: 15%;
+			}
+		}
+
+		.table__col:nth-of-type(3) {
+			@include medium {
+				width: 30%;
+			}
+			@include large {
+				width: 25%;
+			}
+		}
+
+		.table__col:nth-of-type(4) {
+			text-align: right;
+			width: 80%;
+			@include medium {
+				width: 30%;
+			}
+			@include large {
+				width: 20%;
+			}
+			@include xlarge {
+				width: 15%;
+			}
+		}
+
+		.table__col:nth-of-type(5) {
+			width: 20%;
+			@include medium {
+				width: 10%;
+			}
+			@include large {
+				width: 5%;
+			}
+		}
+
+		.table__quantity {
+			flex-flow: row wrap;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+		.table__action {
+			text-align: right;
+		}
+
+		.table__input-qty {
+			width: 80px;
+			margin: 0 8px;
+			border: 1px solid #d2d2d2;
+			transition: border-color 200ms ease-out;
+			text-align: center;
+			padding: 10px;
+			line-height: 23px;
+
+			&:focus {
+				border: 1px solid #c1c1c1;
+				background: #f2f2f2;
+				outline: none;
+				box-shadow: none;
+			}
+		}
+
+		.table__footer {
+			width: 100%;
+			margin-left: auto;
+			@include xlarge {
+				width: 40%;
+			}
+
+			.table__col {
+				width: 100%;
+				text-align: right;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				@include small {
+					width: 50%;
+					padding: 24px 12px;
+				}
+			}
+
+			.table__heading {
+				text-align: left;
+				@include small {
+					text-align: right;
+				}
+			}
+		}
+
+		.mask-currency {
+			text-align: left !important;
+			line-height: 30px;
+			@include large {
+				text-align: right !important;
+			}
+		}
+	}
+}

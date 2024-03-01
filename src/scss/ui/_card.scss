@@ -1,0 +1,284 @@
+.cardview {
+	position: relative;
+
+	&--sidebar {
+		@include medium {
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@include large {
+			max-width: 100%;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.cardview__content {
+			padding: 32px 24px;
+			display: block;
+			text-align: left;
+		}
+
+		.cardview__title {
+			font-family: $font-family-subline;
+			font-weight: normal;
+			font-size: rem(20);
+			line-height: 1.5;
+			margin: 0;
+			margin-bottom: 8px;
+		}
+
+		.cardview__text {
+			p {
+				margin: 0;
+				margin-bottom: 24px;
+				color: black;
+				font-size: rem(16);
+			}
+
+			p:last-child {
+				margin-bottom: 0;
+			}
+
+			a {
+				color: $color-secondary;
+				font-family: $font-family-subline;
+				font-weight: normal;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.cardview__action {
+			margin-top: 24px;
+		}
+
+		.cardview__action-title {
+			font-family: $font-family-subline;
+			font-weight: normal;
+			font-size: rem(16);
+			line-height: 1.5;
+			margin: 0;
+			margin-bottom: 24px;
+		}
+
+		.cardview__action-link {
+			margin: 0;
+			margin-bottom: 16px;
+
+			a {
+				color: $color-secondary;
+				text-decoration: none;
+				display: block;
+				line-height: 24px;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+			svg {
+				stroke: black;
+				width: 16px;
+				line-height: 24px;
+				margin-right: 8px;
+			}
+		}
+	}
+
+	&--helpdesk {
+		border-bottom: 8px solid $color-primary;
+
+		.cardview__content {
+			box-sizing: border-box;
+			padding-bottom: 240px;
+			background: url('../images/default/img-callcenter.jpg') right bottom
+				no-repeat;
+		}
+	}
+
+	&__wrapper {
+		width: 100%;
+		background: white;
+		position: relative;
+		z-index: 1;
+		transition: transform 150ms ease-out;
+		box-sizing: border-box;
+
+		@include medium {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: white;
+				box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.15);
+				z-index: -1;
+				transition: opacity 200ms ease-out;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: white;
+				box-shadow: 0px 10px 30px -3px rgba(0, 0, 0, 0.15);
+				transition: opacity 200ms 0ms ease-out;
+				z-index: -1;
+				opacity: 0;
+			}
+		}
+	}
+
+	&__content {
+		padding: 8px;
+		box-sizing: border-box;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+
+		@include small {
+			padding: 8px 16px;
+		}
+
+		@include xlarge {
+			padding: 16px 28px;
+		}
+	}
+
+	&__image {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: 100%;
+		overflow: hidden;
+
+		img {
+			max-width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__name {
+		font-size: rem(14);
+		font-family: $font-family-subline;
+		font-weight: normal;
+		margin: 0;
+		line-height: rem(21);
+		text-align: left;
+		margin-bottom: 4px;
+		width: 100%;
+
+		@include large {
+			font-size: rem(14);
+			line-height: rem(21);
+		}
+
+		@include xlarge {
+			font-size: rem(16);
+			line-height: rem(22);
+		}
+	}
+
+	&__text {
+		font-size: rem(14);
+		font-family: $font-family-base;
+		margin: 0;
+		line-height: 1.5;
+		color: #999;
+		text-align: left;
+		display: block;
+
+		b {
+			font-weight: normal;
+			color: black;
+		}
+	}
+
+	&__price {
+		color: $color-primary;
+		width: 100%;
+		text-align: left;
+	}
+
+	&__info {
+		color: #909090;
+		font-size: rem(14);
+		margin: 0;
+		line-height: rem(20);
+		text-align: left;
+
+		strong {
+			font-weight: normal;
+			color: black;
+		}
+	}
+
+	&__left {
+		max-width: 60%;
+	}
+
+	&__left--full {
+		width: 100%;
+		max-width: none;
+
+		.cardview__price {
+			text-align: left;
+		}
+	}
+
+	&__right {
+		margin-left: auto;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: black;
+
+		&:hover {
+			.cardview__wrapper {
+				transform: translateY(-1px);
+			}
+
+			.cardview__wrapper:before {
+				opacity: 0.5;
+			}
+
+			.cardview__wrapper:after {
+				opacity: 0.9;
+				transition: opacity 200ms 150ms ease-out;
+			}
+		}
+	}
+
+	.orlabel {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		z-index: 1;
+
+		@include xlarge {
+			top: -3px;
+			right: -12px;
+
+			img {
+				width: 50px;
+			}
+		}
+	}
+}
