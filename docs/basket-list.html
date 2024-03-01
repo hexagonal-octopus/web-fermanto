@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="format-detection" content="telephone=no">
+   <title>Fermanto Bevfoods | My Basket Lists</title>
+   <!-- Favicons -->
+   <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180" />
+   <link rel="icon" href="./favicon-32x32.png" sizes="32x32" type="image/png" />
+   <link rel="icon" href="./favicon-16x16.png" sizes="16x16" type="image/png" />
+   <link rel="icon" href="./favicon.ico"/>
+
+   <link rel="stylesheet" href="./assets/styles/vendor/normalize.css/normalize.css" />
+   
+   <link rel="stylesheet" href="./assets/styles/style.css" />
+
+   <script src="./assets/scripts/vendor/modernizr.js" ></script>
+   <script src="./assets/scripts/vendor/jquery/jquery.min.js" ></script>
+
+</head>
+<body class="body--footer-bottom">
+   <div class="preloader">
+   <div class="preloader__wrapper">
+      <img src="./assets/images/default/img-logo-fermanto-small.png" alt="Preloader Image">
+   </div>
+</div>
+   <header class="header">
+   <nav class="navbar navbar--minimize">
+      <div class="container">
+         <div class="navbar__wrapper">
+            <div class="navbar__brand">
+               <a href="./index.html">
+                  <picture>
+                     <source  srcset="./assets/images/default/logo-large.png 250w, ./assets/images/default/logo-large-retina.png 504w " media="(min-width:576px)">
+                     <img class="large-hero__image" srcset="./assets/images/default/logo-small.png 164w, ./assets/images/default/logo-small-retina.png 328w" alt="Fermanto Logo">
+                  </picture>
+               </a>
+            </div>
+         </div>
+      </div>
+   </nav>
+</header>
+   
+<div class="section section--white section--yspace">
+   <div class="container">
+      <div class="row">
+         <div class="col-2of4">
+            <h1 class="section__title mb-0 mb-4-lg">My Basket Lists</h1>
+         </div>
+         <div class="col-2of4">
+            <div class="text-right-lg">
+               <div class="nav nav--steps">
+   <div class="nav__step nav__step--active"><span>1</span><span>Basket List</span></div>
+   <div class="nav__step"><span>2</span><span>Overview</span></div>
+</div>
+            </div>
+         </div>
+      </div>
+      <div class="my-3 my-4-lg">
+         <!-- ======================================== -->
+         <!-- ============ IF IS EMPTY =============== -->
+         <!-- ======================================== -->
+         <div class="section__text text-center">
+            <img src="./assets/images/default/shopping-cart-medium.png" class="img-responsive mb-3" height="100" />
+            <p>Keranjang Belanja kosong</p>
+            <a href="./products.html" class="button button--primary">Mulai Belanja</a>
+         </div>
+         <!-- ======================================== -->
+         <!-- ================ ELSE ================== -->
+         <!-- ======================================== -->
+         <div class="table table--basket">
+   <div class="table__wrapper">
+      <div class="table__content">
+         <div class="table__header">
+            <div class="table__row">
+               <div class="table__col">
+                  <div class="table__heading">Produk</div>
+               </div>
+               <div class="table__col">
+                  <div class="table__heading">Harga</div>
+               </div>
+               <div class="table__col">
+                  <div class="table__heading">Jumlah</div>
+               </div>
+               <div class="table__col">
+                  <div class="table__heading">Subtotal</div>
+               </div>
+               <div class="table__col"></div>
+            </div>
+         </div>
+         <div class="table__body">
+            <div class="table__row">
+               <div class="table__col" data-label="Product">
+                  <div class="group">
+                     <div class="group__thumb">
+                        <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="group__img">
+                     </div>
+                     <div class="group__content">
+                        <h3 class="group__name">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                        <p class="group__info">Brand: Valledoro</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Harga">
+                  <div class="table__base-price mask-currency">15000</div>
+               </div>
+               <div class="table__col" data-label="Jumlah">
+                  <div class="table__quantity">
+                     <button class="button button--icon button--icon-decrement"><i data-feather="minus"></i></button>
+                     <input class="input input--qty table__input-qty" type="number" value="1"/>
+                     <button class="button button--icon button--icon-increment"><i data-feather="plus"></i></button>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Subtotal">
+                  <div class="table__subtotal mask-currency">0</div>
+               </div>
+               <div class="table__col" data-label="">
+                  <div class="table__action">
+                     <button class="button button--icon-danger js-button-delete" type="button" ><i data-feather="trash"></i></button>
+                  </div>
+               </div>
+            </div><!-- /.table__row -->
+            <div class="table__row">
+               <div class="table__col" data-label="Product">
+                  <div class="group">
+                     <div class="group__thumb">
+                        <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="group__img">
+                     </div>
+                     <div class="group__content">
+                        <h3 class="group__name">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                        <p class="group__info">Brand: Valledoro</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Harga">
+                  <div class="table__base-price mask-currency">20000</div>
+               </div>
+               <div class="table__col" data-label="Jumlah">
+                  <div class="table__quantity">
+                     <button class="button button--icon button--icon-decrement"><i data-feather="minus"></i></button>
+                     <input class="input input--qty table__input-qty" type="number" value="1"/>
+                     <button class="button button--icon button--icon-increment"><i data-feather="plus"></i></button>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Subtotal">
+                  <div class="table__subtotal mask-currency">0</div>
+               </div>
+               <div class="table__col" data-label="">
+                  <div class="table__action">
+                     <button class="button button--icon-danger js-button-delete" type="button" ><i data-feather="trash"></i></button>
+                  </div>
+               </div>
+            </div><!-- /.table__row -->
+            <div class="table__row">
+               <div class="table__col" data-label="Product">
+                  <div class="group">
+                     <div class="group__thumb">
+                        <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="group__img">
+                     </div>
+                     <div class="group__content">
+                        <h3 class="group__name">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                        <p class="group__info">Brand: Valledoro</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Harga">
+                  <div class="table__base-price mask-currency">60000</div>
+               </div>
+               <div class="table__col" data-label="Jumlah">
+                  <div class="table__quantity">
+                     <button class="button button--icon button--icon-decrement"><i data-feather="minus"></i></button>
+                     <input class="input input--qty table__input-qty" type="number" value="1"/>
+                     <button class="button button--icon button--icon-increment"><i data-feather="plus"></i></button>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Subtotal">
+                  <div class="table__subtotal mask-currency">0</div>
+               </div>
+               <div class="table__col" data-label="">
+                  <div class="table__action">
+                     <button class="button button--icon-danger js-button-delete" type="button" ><i data-feather="trash"></i></button>
+                  </div>
+               </div>
+            </div><!-- /.table__row -->
+            <div class="table__row">
+               <div class="table__col" data-label="Product">
+                  <div class="group">
+                     <div class="group__thumb">
+                        <img src="./assets/images/default/img-crostini-50.jpg" alt="" class="group__img">
+                     </div>
+                     <div class="group__content">
+                        <h3 class="group__name">Torinesi Famiglia Lionel Messi Menggiring Bola Ahoy! Ini bukan sembarang Merk</h3>
+                        <p class="group__info">Brand: Valledoro</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Harga">
+                  <div class="table__base-price mask-currency">30000</div>
+               </div>
+               <div class="table__col" data-label="Jumlah">
+                  <div class="table__quantity">
+                     <button class="button button--icon button--icon-decrement"><i data-feather="minus"></i></button>
+                     <input class="input input--qty table__input-qty" type="number" value="1"/>
+                     <button class="button button--icon button--icon-increment"><i data-feather="plus"></i></button>
+                  </div>
+               </div>
+               <div class="table__col" data-label="Subtotal">
+                  <div class="table__subtotal mask-currency" >0</div>
+               </div>
+               <div class="table__col" data-label="">
+                  <div class="table__action">
+                     <button class="button button--icon-danger js-button-delete" type="button" ><i data-feather="trash"></i></button>
+                  </div>
+               </div>
+            </div><!-- /.table__row -->
+         </div><!-- /.table__body -->
+         <div class="table__footer">
+            <div class="table__row table__row--justify-end">
+               <div class="table__col">
+                  <div class="table__heading">Subtotal</div>
+               </div>
+               <div class="table__col">
+                  <div class="table__netttotal mask-currency">0</div>
+               </div>
+            </div>
+            <div class="table__row table__row--justify-end table__row--no-border">
+               <div class="table__col">
+                  <div class="table__heading">Grand total</div>
+               </div>
+               <div class="table__col">
+                  <div class="table__grandtotal mask-currency">0</div>
+               </div>
+            </div>
+         </div>
+      </div><!-- /.table__content -->
+   </div>
+</div>
+         <!-- ========================================= -->
+         <!-- ================ ENDIF ================== -->
+         <!-- ========================================= -->
+      </div>
+      <div class="display-flex justify-content-end">
+         <a href="./products.html" class="button button--tertiary mr-2" title="Kembali Berbelanja">Kembali Berbelanja</a>
+         <a href="./checkout.html" class="button button--primary" title="Checkout">Checkout</a>
+      </div>
+   </div>
+</div>
+
+   <footer class="footer">
+   <div class="footer__bottom">
+      <div class="container">
+         <span class="text-center">Copyright &copy; 2018. FermantoBevFood. All Right Reserved.</span>
+      </div>
+   </div>
+</footer>
+
+   
+<div class="modal modal--alt" id="modalConfirmAlert">
+   <div class="modal__wrapper">
+      <div class="modal__dialog">
+         <div class="modal__header">
+            
+            <button class="button modal__close" data-dismiss="modal"><i class="button__icon" data-feather="x"></i></button>
+         </div>
+         <div class="modal__body">
+            <div class="modal__image">
+               <img src="./assets/images/default/img-alert-triangle.png" alt="Thankyou Image" height="41">
+            </div>
+            <h2 class="modal__headline text-danger">Konfirmasi Hapus Produk</h2>
+            <div class="modal__text">
+               <p>Apakah Anda yakin untuk menghapus produk ini? Produk akan hilang dari list belanja Anda.</p>
+            </div>
+            <div class="modal__action">
+               <button class="button button--danger" id="buttonConfirmed">Ya, Hapus produk ini</button>
+               <button class="button button--link-gray" data-dismiss="modal">Batal, Tetap simpan</button>
+            </div>
+         </div><!-- /.modal__body -->
+      </div><!-- /.modal__dialog -->
+   </div><!-- /.modal__wrapper -->
+</div><!-- /.modal -->
+
+   <script src="./assets/scripts/vendor/jquery.nicescroll/jquery.nicescroll.min.js" ></script>
+   <script src="./assets/scripts/vendor/feather-icons/feather.min.js" ></script>
+   
+<script src="./assets/scripts/vendor/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<script src="./assets/scripts/basketList.js"></script>
+
+   <script type="text/javascript" src="./assets/scripts/main.js"></script>
+</body>
+</html>
